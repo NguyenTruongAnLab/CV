@@ -35,10 +35,28 @@ jobs:
       - name: Set execute permissions
         run: chmod +x ./compile.sh ./compile_all.sh ./watch.sh
       
-      - name: Install minimal dependencies
+      - name: Install dependencies with proper font support
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc wkhtmltopdf shellcheck lmodern
+          sudo apt-get install -y pandoc wkhtmltopdf shellcheck lmodern fontconfig
+          # Install Latin Modern fonts for proper text rendering
+          mkdir -p styles/default/fonts
+          if [ ! -f styles/default/fonts/lmroman10-regular.otf ]; then
+            mkdir -p /tmp/fonts && cd /tmp/fonts
+            wget -q https://www.gust.org.pl/projects/e-foundry/latin-modern/download/lm2.004otf.zip
+            unzip -q lm2.004otf.zip
+            cp lm/otf/lmroman10-*.otf $GITHUB_WORKSPACE/styles/default/fonts/
+            cd $GITHUB_WORKSPACE
+            # Register fonts with the system
+            sudo mkdir -p /usr/share/fonts/opentype/lmodern
+            sudo cp styles/default/fonts/lmroman10-*.otf /usr/share/fonts/opentype/lmodern/
+            sudo fc-cache -f -v
+          fi
+      
+      - name: Update compile.sh for better PDF text rendering
+        run: |
+          # Modify compile.sh to use improved PDF options
+          sed -i 's/--pdf-engine=wkhtmltopdf --pdf-engine-opt=--enable-local-file-access/--pdf-engine=wkhtmltopdf --pdf-engine-opt=--enable-local-file-access --pdf-engine-opt=--enable-smart-shrinking --pdf-engine-opt=--disable-internal-links/' compile.sh
       
       - name: Run shellcheck
         run: |
