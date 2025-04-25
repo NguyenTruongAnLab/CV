@@ -30,12 +30,12 @@ param (
     [string]$Style = "default"
 )
 
-# Define the exact path to Pandoc (from RStudio installation)
+# Define the exact path to Pandoc (from installation)
 $pandocPath = "pandoc"
 
 # If pandoc is not found at the RStudio path, try looking in the system PATH
 if (-not (Test-Path $pandocPath)) {
-    Write-Host "RStudio Pandoc not found. Checking system PATH..." -ForegroundColor Yellow
+    Write-Host "Pandoc not found. Checking system PATH..." -ForegroundColor Yellow
     $pandocInPath = Get-Command pandoc -ErrorAction SilentlyContinue
     
     if ($pandocInPath) {
@@ -48,6 +48,41 @@ if (-not (Test-Path $pandocPath)) {
     }
 }
 
+# Check for local font files, download them if not present
+$fontDir = Join-Path $PSScriptRoot "styles" $Style "fonts"
+$requiredFonts = @(
+    "lmroman10-regular.otf",
+    "lmroman10-bold.otf", 
+    "lmroman10-italic.otf"
+)
+
+$fontsPresent = $true
+foreach ($font in $requiredFonts) {
+    if (-not (Test-Path (Join-Path $fontDir $font))) {
+        $fontsPresent = $false
+        break
+    }
+}
+
+if (-not $fontsPresent) {
+    Write-Host "Required fonts not found. Running font download script..." -ForegroundColor Yellow
+    & "$PSScriptRoot\download_fonts.ps1"
+    
+    # Verify fonts were downloaded
+    $fontsPresent = $true
+    foreach ($font in $requiredFonts) {
+        if (-not (Test-Path (Join-Path $fontDir $font))) {
+            $fontsPresent = $false
+            Write-Host "Font $font still missing after download attempt." -ForegroundColor Red
+            break
+        }
+    }
+    
+    if (-not $fontsPresent) {
+        Write-Host "Unable to download required fonts. Your CV may not display with the correct typography." -ForegroundColor Yellow
+    }
+}
+
 # Validate input file
 if (-not (Test-Path $InputFile)) {
     Write-Error "Input file not found: $InputFile"
@@ -57,14 +92,14 @@ if (-not (Test-Path $InputFile)) {
 # Setup paths
 $outputDir = Join-Path $PSScriptRoot "output"
 $styleDir = Join-Path $PSScriptRoot "styles" $Style
-$cssFile = Join-Path $styleDir "main.css"
+$cssFiles = Get-ChildItem -Path $styleDir -Filter "*.css" | ForEach-Object { "-c", $_.FullName }
 
 # Validate style
 if (-not (Test-Path $styleDir)) {
     Write-Host "Style directory not found: $styleDir. Using default style." -ForegroundColor Yellow
     $Style = "default"
     $styleDir = Join-Path $PSScriptRoot "styles" $Style
-    $cssFile = Join-Path $styleDir "main.css"
+    $cssFiles = Get-ChildItem -Path $styleDir -Filter "*.css" | ForEach-Object { "-c", $_.FullName }
 }
 
 # Ensure output directory exists
@@ -81,21 +116,48 @@ Write-Host "Converting $InputFile using $Style style..." -ForegroundColor Cyan
 # Generate HTML
 Write-Host "Generating HTML version..."
 $htmlOutPath = Join-Path $outputDir "$baseFileName.html"
-& $pandocPath -s --embed-resources --standalone -c $cssFile $InputFile -o $htmlOutPath
+& $pandocPath -s --embed-resources --standalone $cssFiles $InputFile -o $htmlOutPath
 if ($LASTEXITCODE -eq 0) {
     Write-Host "HTML generated successfully: $htmlOutPath" -ForegroundColor Green
 } else {
     Write-Host "HTML generation failed" -ForegroundColor Red
 }
 
-# Generate PDF
+# Generate PDF with redirected error output to hide URL schema warnings
 Write-Host "`nGenerating PDF version..."
 $pdfOutPath = Join-Path $outputDir "$baseFileName.pdf"
-& $pandocPath -s --embed-resources --standalone -c $cssFile $InputFile -o $pdfOutPath --pdf-engine=wkhtmltopdf --pdf-engine-opt=--enable-local-file-access
-if ($LASTEXITCODE -eq 0) {
+
+# Create a temporary file for error output
+$errorLogFile = Join-Path $env:TEMP "cv_pdf_errors.log"
+
+# Run pandoc with error output redirected
+$processInfo = New-Object System.Diagnostics.ProcessStartInfo
+$processInfo.FileName = $pandocPath
+$processInfo.Arguments = "-s --embed-resources --standalone --resource-path=`"$PSScriptRoot;$styleDir`" " + 
+                        ($cssFiles -join " ") + " `"$InputFile`" -o `"$pdfOutPath`" " +
+                        "--pdf-engine=wkhtmltopdf --pdf-engine-opt=--enable-local-file-access"
+$processInfo.RedirectStandardError = $true
+$processInfo.UseShellExecute = $false
+$processInfo.CreateNoWindow = $true
+
+$process = New-Object System.Diagnostics.Process
+$process.StartInfo = $processInfo
+$process.Start() | Out-Null
+$stderr = $process.StandardError.ReadToEnd()
+$process.WaitForExit()
+
+# Only show errors that aren't the URL schema warnings
+$filteredErrors = $stderr -split "`n" | Where-Object { $_ -notmatch "URL has no schema set, use file:// for files" }
+if ($filteredErrors) {
+    $filteredErrors | ForEach-Object { Write-Host $_ -ForegroundColor Yellow }
+}
+
+if ($process.ExitCode -eq 0) {
     Write-Host "PDF generated successfully: $pdfOutPath" -ForegroundColor Green
 } else {
     Write-Host "PDF generation failed" -ForegroundColor Red
+    # Show all errors if the process failed
+    $stderr -split "`n" | ForEach-Object { Write-Host $_ -ForegroundColor Red }
 }
 
 # Open the output directory

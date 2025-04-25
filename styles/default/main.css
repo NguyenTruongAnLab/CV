@@ -129,6 +129,8 @@ body {
   font-family: Latin Modern Roman, Latin Modern Math, serif;
 }
 
+/* Import the custom fonts */
+@import url('fonts.css');
 
 ul {
   position: relative;
@@ -145,7 +147,8 @@ ol {
   width: 65%; /* Match ul positioning */
   margin-bottom: 10px; /* Match ul positioning */
   list-style: decimal; /* Ensure decimal numbering */
-  padding-left: 1.25em; /* Add padding for numbers */
+  padding-left: 0em; /* Reduced padding for numbers as requested */
+  margin-top: 0; /* Reduce top margin to close gap with headings */
 }
 
 ul li:before {
