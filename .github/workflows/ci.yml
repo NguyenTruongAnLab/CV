@@ -35,37 +35,95 @@ jobs:
       - name: Set execute permissions
         run: chmod +x ./compile.sh ./compile_all.sh ./watch.sh
       
-      - name: Install dependencies with proper font support
+      - name: Install WeasyPrint dependencies for better PDF text rendering
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc wkhtmltopdf shellcheck lmodern fontconfig
-          # Install Latin Modern fonts for proper text rendering
-          mkdir -p styles/default/fonts
-          if [ ! -f styles/default/fonts/lmroman10-regular.otf ]; then
-            mkdir -p /tmp/fonts && cd /tmp/fonts
-            wget -q https://www.gust.org.pl/projects/e-foundry/latin-modern/download/lm2.004otf.zip
-            unzip -q lm2.004otf.zip
-            cp lm/otf/lmroman10-*.otf $GITHUB_WORKSPACE/styles/default/fonts/
-            cd $GITHUB_WORKSPACE
-            # Register fonts with the system
-            sudo mkdir -p /usr/share/fonts/opentype/lmodern
-            sudo cp styles/default/fonts/lmroman10-*.otf /usr/share/fonts/opentype/lmodern/
-            sudo fc-cache -f -v
-          fi
+          sudo apt-get install -y pandoc shellcheck python3-pip python3-cffi python3-brotli libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0 libfontconfig1
+          sudo pip3 install weasyprint
+          
+          # Still install wkhtmltopdf as fallback for testing
+          sudo apt-get install -y wkhtmltopdf
       
-      - name: Update compile.sh for better PDF text rendering
+      - name: Create GitHub Actions specific PDF generation script
         run: |
-          # Modify compile.sh to use improved PDF options
-          sed -i 's/--pdf-engine=wkhtmltopdf --pdf-engine-opt=--enable-local-file-access/--pdf-engine=wkhtmltopdf --pdf-engine-opt=--enable-local-file-access --pdf-engine-opt=--enable-smart-shrinking --pdf-engine-opt=--disable-internal-links/' compile.sh
+          cat > ./compile_github_action.sh << 'EOF'
+          #!/usr/bin/env bash
+          set -e
+          
+          if [ "$#" -lt 1 ] || [ "$#" -gt 3 ] || ! [ -f "$1" ]; then
+            echo "Usage:" >&2
+            echo "$0 src/filename.md (pdf|html) [style_name]" >&2
+            exit 1
+          fi
+          
+          if [[ "pdf" != "$2" ]] && [[ "html" != "$2" ]]; then
+            echo "invalid format, expected 'pdf' or 'html', got '$2'" >&2
+            exit 1
+          fi
+          
+          sourcefile="$1"
+          format="$2"
+          
+          STYLE=$(pandoc -s "$sourcefile" --template extract_style.txt)
+          
+          if [ -z "$STYLE" ]; then
+            echo "style not set in markdown front matter, using default" >&2
+            STYLE=default
+          fi
+          
+          if [ ! -d "styles/$STYLE" ]; then
+            echo "style '$STYLE' doesn't exist, using default" >&2
+            STYLE=default
+          else 
+            echo "using '$STYLE' style" >&2
+          fi
+          
+          source_base=$(basename "$sourcefile" .md)
+          
+          # shellcheck disable=SC2012
+          styles=$(ls -p styles/"${STYLE}"/*.css | sed "s/^/-c /" | tr "\n" " ")
+          
+          # Generate HTML file first
+          pandoc -s -t html $styles "$sourcefile" -o "output/$source_base.html"
+          
+          if [[ "pdf" == "$2" ]]; then
+            # Use WeasyPrint for PDF generation
+            echo "Using WeasyPrint for PDF generation with selectable text"
+            weasyprint -v "output/$source_base.html" "output/$source_base.pdf"
+          fi
+          EOF
+          
+          chmod +x ./compile_github_action.sh
       
       - name: Run shellcheck
         run: |
           shellcheck ./compile.sh
           shellcheck ./compile_all.sh
           shellcheck ./watch.sh
+          shellcheck ./compile_github_action.sh
       
-      - name: Build CV files
-        run: ./compile_all.sh
+      - name: Create GitHub Actions specific build script
+        run: |
+          cat > ./compile_all_github_action.sh << 'EOF'
+          #!/usr/bin/env bash
+          set -e
+          
+          FILES="src/*"
+          for f in $FILES
+          do
+            echo "Processing $f file..."
+            echo "compiling pdf..."
+            ./compile_github_action.sh "$f" pdf
+            echo "compiling html.."
+            ./compile_github_action.sh "$f" html
+            echo "DONE!"
+          done
+          EOF
+          
+          chmod +x ./compile_all_github_action.sh
+      
+      - name: Build CV files with WeasyPrint PDF engine
+        run: ./compile_all_github_action.sh
       
       - name: Verify output files exist
         run: |
@@ -79,7 +137,7 @@ jobs:
           test ! -f ./output/NguyenTruongAn_CV.html || { echo "NguyenTruongAn_CV.html not removed"; exit 1; }
           
       - name: Rebuild for artifact
-        run: ./compile_all.sh
+        run: ./compile_all_github_action.sh
 
       - uses: actions/upload-artifact@v4
         with:
