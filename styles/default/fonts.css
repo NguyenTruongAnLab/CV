@@ -28,3 +28,11 @@ h1, h2, h3, h4 {
     font-family: 'Latin Modern Roman', Georgia, serif;
     font-weight: bold;
 }
+
+/* Symbol styles for section headings */
+.heading-symbol {
+    margin-right: 6px;
+    display: inline-block;
+    width: 18px;
+    text-align: center;
+}

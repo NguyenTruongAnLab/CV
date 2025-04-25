@@ -93,6 +93,19 @@ To customize the appearance of your resume:
 2. Add CSS files to the folder
 3. Reference the style in your Markdown front matter with `style: your-style-name`
 
+### Fonts
+
+This project uses Latin Modern fonts for a professional LaTeX-like appearance:
+
+- The fonts are included in the `styles/default/fonts/` directory
+- Font files are loaded via CSS for both HTML and PDF output
+- Font embedding ensures consistent appearance across different environments
+
+#### Font Attribution
+
+The Latin Modern fonts are © 2003–2009 GUST e-foundry and are used under the GUST Font License (GFL).
+For more information about these fonts, visit: https://www.gust.org.pl/projects/e-foundry/latin-modern/
+
 ## Advanced Usage
 
 ### Docker
