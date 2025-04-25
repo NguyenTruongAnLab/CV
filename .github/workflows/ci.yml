@@ -23,107 +23,46 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      # Setup caching for apt packages to speed up installations
-      - name: Cache apt packages
-        uses: actions/cache@v3
-        with:
-          path: /var/cache/apt/archives
-          key: ${{ runner.os }}-apt-${{ hashFiles('**/ci.yml') }}
-          restore-keys: |
-            ${{ runner.os }}-apt-
-      
       - name: Set execute permissions
         run: chmod +x ./compile.sh ./compile_all.sh ./watch.sh
       
-      - name: Install WeasyPrint dependencies for better PDF text rendering
+      - name: Install dependencies and set up fonts
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc shellcheck python3-pip python3-cffi python3-brotli libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0 libfontconfig1
-          sudo pip3 install weasyprint
+          sudo apt-get install -y pandoc wkhtmltopdf shellcheck fontconfig
           
-          # Still install wkhtmltopdf as fallback for testing
-          sudo apt-get install -y wkhtmltopdf
-      
-      - name: Create GitHub Actions specific PDF generation script
-        run: |
-          cat > ./compile_github_action.sh << 'EOF'
-          #!/usr/bin/env bash
-          set -e
+          # Create fonts directory structure identical to Windows setup
+          mkdir -p styles/default/fonts
           
-          if [ "$#" -lt 1 ] || [ "$#" -gt 3 ] || ! [ -f "$1" ]; then
-            echo "Usage:" >&2
-            echo "$0 src/filename.md (pdf|html) [style_name]" >&2
-            exit 1
-          fi
+          # Download and install Latin Modern Roman fonts (same as in Windows)
+          FONT_TEMP=$(mktemp -d)
+          cd $FONT_TEMP
+          wget -q https://www.gust.org.pl/projects/e-foundry/latin-modern/download/lm2.004otf.zip
+          unzip -q lm2.004otf.zip
           
-          if [[ "pdf" != "$2" ]] && [[ "html" != "$2" ]]; then
-            echo "invalid format, expected 'pdf' or 'html', got '$2'" >&2
-            exit 1
-          fi
+          # Copy the same font files used in Windows
+          cp lm/otf/lmroman10-regular.otf $GITHUB_WORKSPACE/styles/default/fonts/
+          cp lm/otf/lmroman10-bold.otf $GITHUB_WORKSPACE/styles/default/fonts/
+          cp lm/otf/lmroman10-italic.otf $GITHUB_WORKSPACE/styles/default/fonts/
+          cp lm/otf/lmroman10-bolditalic.otf $GITHUB_WORKSPACE/styles/default/fonts/
+          cp lm/otf/lmroman12-regular.otf $GITHUB_WORKSPACE/styles/default/fonts/
+          cp lm/otf/lmroman12-bold.otf $GITHUB_WORKSPACE/styles/default/fonts/
+          cp lm/otf/lmroman12-italic.otf $GITHUB_WORKSPACE/styles/default/fonts/
+          cd $GITHUB_WORKSPACE
           
-          sourcefile="$1"
-          format="$2"
-          
-          STYLE=$(pandoc -s "$sourcefile" --template extract_style.txt)
-          
-          if [ -z "$STYLE" ]; then
-            echo "style not set in markdown front matter, using default" >&2
-            STYLE=default
-          fi
-          
-          if [ ! -d "styles/$STYLE" ]; then
-            echo "style '$STYLE' doesn't exist, using default" >&2
-            STYLE=default
-          else 
-            echo "using '$STYLE' style" >&2
-          fi
-          
-          source_base=$(basename "$sourcefile" .md)
-          
-          # shellcheck disable=SC2012
-          styles=$(ls -p styles/"${STYLE}"/*.css | sed "s/^/-c /" | tr "\n" " ")
-          
-          # Generate HTML file first
-          pandoc -s -t html $styles "$sourcefile" -o "output/$source_base.html"
-          
-          if [[ "pdf" == "$2" ]]; then
-            # Use WeasyPrint for PDF generation
-            echo "Using WeasyPrint for PDF generation with selectable text"
-            weasyprint -v "output/$source_base.html" "output/$source_base.pdf"
-          fi
-          EOF
-          
-          chmod +x ./compile_github_action.sh
+          # Install the fonts system-wide for better rendering
+          sudo mkdir -p /usr/share/fonts/opentype/latin-modern
+          sudo cp styles/default/fonts/*.otf /usr/share/fonts/opentype/latin-modern/
+          sudo fc-cache -f -v
       
       - name: Run shellcheck
         run: |
           shellcheck ./compile.sh
           shellcheck ./compile_all.sh
           shellcheck ./watch.sh
-          shellcheck ./compile_github_action.sh
       
-      - name: Create GitHub Actions specific build script
-        run: |
-          cat > ./compile_all_github_action.sh << 'EOF'
-          #!/usr/bin/env bash
-          set -e
-          
-          FILES="src/*"
-          for f in $FILES
-          do
-            echo "Processing $f file..."
-            echo "compiling pdf..."
-            ./compile_github_action.sh "$f" pdf
-            echo "compiling html.."
-            ./compile_github_action.sh "$f" html
-            echo "DONE!"
-          done
-          EOF
-          
-          chmod +x ./compile_all_github_action.sh
-      
-      - name: Build CV files with WeasyPrint PDF engine
-        run: ./compile_all_github_action.sh
+      - name: Build CV files
+        run: ./compile_all.sh
       
       - name: Verify output files exist
         run: |
@@ -137,7 +76,7 @@ jobs:
           test ! -f ./output/NguyenTruongAn_CV.html || { echo "NguyenTruongAn_CV.html not removed"; exit 1; }
           
       - name: Rebuild for artifact
-        run: ./compile_all_github_action.sh
+        run: ./compile_all.sh
 
       - uses: actions/upload-artifact@v4
         with:
