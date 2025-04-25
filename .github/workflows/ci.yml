@@ -23,13 +23,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
+      # Setup caching for apt packages to speed up installations
+      - name: Cache apt packages
+        uses: actions/cache@v3
+        with:
+          path: /var/cache/apt/archives
+          key: ${{ runner.os }}-apt-${{ hashFiles('**/ci.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-apt-
+      
       - name: Set execute permissions
         run: chmod +x ./compile.sh ./compile_all.sh ./watch.sh
       
-      - name: Install dependencies
+      - name: Install minimal dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc wkhtmltopdf shellcheck lmodern texlive-fonts-recommended texlive-latex-extra
+          sudo apt-get install -y pandoc wkhtmltopdf shellcheck lmodern
       
       - name: Run shellcheck
         run: |
@@ -59,10 +68,11 @@ jobs:
           name: cv-outputs
           path: output/
       
-      - name: Get current date
-        id: date
+      - name: Get current date and timestamp
+        id: datetime
         run: |
           echo "DATE=$(date +'%d-%B-%Y')" >> $GITHUB_OUTPUT
+          echo "TIMESTAMP=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_OUTPUT
       
       - name: Create Release
         id: create_release
@@ -71,8 +81,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: release-${{ steps.date.outputs.DATE }}
-          release_name: CV Release ${{ steps.date.outputs.DATE }}
+          tag_name: release-${{ steps.datetime.outputs.DATE }}-${{ steps.datetime.outputs.TIMESTAMP }}
+          release_name: CV Release ${{ steps.datetime.outputs.DATE }}
           draft: false
           prerelease: false
       
@@ -83,8 +93,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: release-${{ github.event.inputs.release_date || steps.date.outputs.DATE }}
-          release_name: CV Release ${{ github.event.inputs.release_date || steps.date.outputs.DATE }}
+          tag_name: release-${{ github.event.inputs.release_date || steps.datetime.outputs.DATE }}-${{ steps.datetime.outputs.TIMESTAMP }}
+          release_name: CV Release ${{ github.event.inputs.release_date || steps.datetime.outputs.DATE }}
           draft: false
           prerelease: false
       
