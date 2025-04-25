@@ -1,0 +1,125 @@
+on: 
+  push:
+    branches: [main, master]
+  release:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      release_date:
+        description: 'Custom release date (defaults to current date)'
+        required: false
+        type: string
+
+# Add permissions needed for creating releases
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest 
+    name: Build and Test
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set execute permissions
+        run: chmod +x ./compile.sh ./compile_all.sh ./watch.sh
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc wkhtmltopdf shellcheck
+      
+      - name: Run shellcheck
+        run: |
+          shellcheck ./compile.sh
+          shellcheck ./compile_all.sh
+          shellcheck ./watch.sh
+      
+      - name: Build CV files
+        run: ./compile_all.sh
+      
+      - name: Verify output files exist
+        run: |
+          test -f ./output/NguyenTruongAn_CV.pdf || { echo "NguyenTruongAn_CV.pdf not found"; exit 1; }
+          test -f ./output/NguyenTruongAn_CV.html || { echo "NguyenTruongAn_CV.html not found"; exit 1; }
+          
+      - name: Test clean operation
+        run: |
+          make clean
+          test ! -f ./output/NguyenTruongAn_CV.pdf || { echo "NguyenTruongAn_CV.pdf not removed"; exit 1; }
+          test ! -f ./output/NguyenTruongAn_CV.html || { echo "NguyenTruongAn_CV.html not removed"; exit 1; }
+          
+      - name: Rebuild for artifact
+        run: ./compile_all.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cv-outputs
+          path: output/
+      
+      - name: Get current date
+        id: date
+        run: |
+          echo "DATE=$(date +'%d-%B-%Y')" >> $GITHUB_OUTPUT
+      
+      - name: Create Release
+        id: create_release
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: release-${{ steps.date.outputs.DATE }}
+          release_name: CV Release ${{ steps.date.outputs.DATE }}
+          draft: false
+          prerelease: false
+      
+      - name: Create Manual Release
+        id: create_manual_release
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.release_date != ''
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: release-${{ github.event.inputs.release_date || steps.date.outputs.DATE }}
+          release_name: CV Release ${{ github.event.inputs.release_date || steps.date.outputs.DATE }}
+          draft: false
+          prerelease: false
+      
+      - name: Get Release Info
+        id: get_release
+        if: github.event_name == 'release'
+        run: echo "UPLOAD_URL=${{ github.event.release.upload_url }}" >> $GITHUB_OUTPUT
+      
+      - name: Upload PDF Asset
+        if: github.event_name == 'release' || github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') || (github.event_name == 'workflow_dispatch' && github.event.inputs.release_date != '')
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event_name == 'release' && steps.get_release.outputs.UPLOAD_URL || github.event_name == 'workflow_dispatch' && github.event.inputs.release_date != '' && steps.create_manual_release.outputs.upload_url || steps.create_release.outputs.upload_url }}
+          asset_path: ./output/NguyenTruongAn_CV.pdf
+          asset_name: NguyenTruongAn_CV.pdf
+          asset_content_type: application/pdf
+      
+      - name: Upload HTML Asset
+        if: github.event_name == 'release' || github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') || (github.event_name == 'workflow_dispatch' && github.event.inputs.release_date != '')
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event_name == 'release' && steps.get_release.outputs.UPLOAD_URL || github.event_name == 'workflow_dispatch' && github.event.inputs.release_date != '' && steps.create_manual_release.outputs.upload_url || steps.create_release.outputs.upload_url }}
+          asset_path: ./output/NguyenTruongAn_CV.html
+          asset_name: NguyenTruongAn_CV.html
+          asset_content_type: text/html
+          
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
+          force_orphan: true
