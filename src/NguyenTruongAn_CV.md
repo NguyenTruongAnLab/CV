@@ -84,7 +84,7 @@ Institute of Environmental Geosciences (IGE), France.
 
 Young Investigator Project, HCMUT, Vietnam
 
-*Design of a pilot scale constructed wetland and analysis of water NguyenTruongAn_CVs*
+*Design of a pilot scale constructed wetland and analysis of wastewater*
 
 #### Lab technician (18 months) `12/2015-06/2017`
 
@@ -96,7 +96,7 @@ Asian Center for Water Research (CARE-RESCIF), Vietnam.
 
 Project: development of "passive sampling" for the analysis of antibiotics in river
 
-*Sampling and pretreatment of NguyenTruongAn_CVs for antibiotics measurement*
+*Sampling and pretreatment of river water samples for antibiotics measurement*
 
 ## Competences
 
