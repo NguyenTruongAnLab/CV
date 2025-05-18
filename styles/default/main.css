@@ -129,9 +129,6 @@ body {
   font-family: Latin Modern Roman, Latin Modern Math, serif;
 }
 
-/* Import the custom fonts */
-/* @import url('fonts.css'); */
-
 ul {
   position: relative;
   left: 28%;
