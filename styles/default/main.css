@@ -130,7 +130,7 @@ body {
 }
 
 /* Import the custom fonts */
-@import url('fonts.css');
+/* @import url('fonts.css'); */
 
 ul {
   position: relative;
