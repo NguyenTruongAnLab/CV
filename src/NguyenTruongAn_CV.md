@@ -9,23 +9,18 @@ papersize: a4
 style: default
 ---
 
-<hr />
-
-## Contact
+# Curriculum Vitae - Nguyễn Trường An
 
 Nguyễn Trường An, PhD  
-<truongan9393@yahoo.com>  
-[Phone: +33 662 04 98 13](tel:0662049813)  
-[ResearchGate](https://www.researchgate.net/profile/Truong-Nguyen-38)  
-[Orcid](https://orcid.org/0000-0003-2787-7534)  
-[GoogleScholar](https://scholar.google.com/citations?hl=en&user=wxhdH1UAAAAJ&view_op=list_works&sortby=pubdate)
+truongan9393@yahoo.com  
+Phone: +33 662 04 98 13  
+[ResearchGate](https://www.researchgate.net/profile/Truong-Nguyen-38) | [Orcid](https://orcid.org/0000-0003-2787-7534) | [GoogleScholar](https://scholar.google.com/citations?hl=en&user=wxhdH1UAAAAJ&view_op=list_works&sortby=pubdate)
 
 ---
 
 ## Currently
 
 I am a postdoc researcher with interests in:
-
 - Water quality modelling in rivers and estuaries
 - Eutrophication, greenhouse gases emissions, and biogeochemical processes
 
@@ -33,15 +28,15 @@ I am a postdoc researcher with interests in:
 
 ## Education
 
-**PhD in Environmental Science** &nbsp;&nbsp;<span style="float:right;">11/2018–12/2021</span>  
+**PhD in Environmental Science** <span style="float:right;">11/2018–12/2021</span>  
 University of Grenoble Alpes (UGA), France  
 *Biogeochemical modeling in a tropical estuary and eutrophication management*
 
-**Master's in Hydraulics** &nbsp;&nbsp;<span style="float:right;">09/2017–08/2018</span>  
+**Master's in Hydraulics** <span style="float:right;">09/2017–08/2018</span>  
 Grenoble Institute of Technology (Grenoble INP), France  
 *Modeling nutrient dynamics in the Saigon River Estuary, Vietnam*
 
-**Bachelor's in Environmental Management** &nbsp;&nbsp;<span style="float:right;">09/2011–02/2016</span>  
+**Bachelor's in Environmental Management** <span style="float:right;">09/2011–02/2016</span>  
 Ho Chi Minh City University of Technology (HCMUT), Vietnam  
 *Antibiotic pollution in the Saigon River, Vietnam*
 
@@ -49,10 +44,10 @@ Ho Chi Minh City University of Technology (HCMUT), Vietnam
 
 ## Teaching Experience and Qualifications
 
-**Teaching Assistant, Grenoble INP** &nbsp;&nbsp;<span style="float:right;">2019–2025</span>  
-- Delivered lectures on [Water Quality and Treatment](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte)  
-- Led tutorials on [River water quality modelling](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte)  
-- Conducted laboratory sessions on water quality analysis techniques  
+**Teaching Assistant, Grenoble INP** <span style="float:right;">2019–2025</span>  
+- Delivered lectures on [Water Quality and Treatment](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte)
+- Led tutorials on [River water quality modelling](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte)
+- Conducted laboratory sessions on water quality analysis techniques
 - Supervised master's students
 
 **Teaching Interests:**  
@@ -66,32 +61,32 @@ Ho Chi Minh City University of Technology (HCMUT), Vietnam
 
 ## Professional Experience
 
-**Postdoctoral Researcher** (26 months) &nbsp;&nbsp;<span style="float:right;">05/2024–06/2026</span>  
+**Postdoctoral Researcher** (26 months) <span style="float:right;">05/2024–06/2026</span>  
 Institut Géosciences Environnement (IGE), Institut de recherche pour le développement (IRD)  
 *Project:* TROPECOS project, Past, Present, and Future Greenhouse Gases of Tropical Estuaries  
 [Project link](https://tropecos.fr/study-site/vietnam-ho-chi-minh-city-and-mekong-delta)
 
-**Postdoctoral Researcher** (22 months) &nbsp;&nbsp;<span style="float:right;">05/2022–02/2024</span>  
+**Postdoctoral Researcher** (22 months) <span style="float:right;">05/2022–02/2024</span>  
 INRAE, l'Institut national de recherche pour l'agriculture, l'alimentation et l'environnement  
 *Project:* Studying the evolution of carbonate system at Loire River by using high resolution datasets
 
-**Doctoral Contract** (37 months) &nbsp;&nbsp;<span style="float:right;">11/2018–12/2021</span>  
+**Doctoral Contract** (37 months) <span style="float:right;">11/2018–12/2021</span>  
 Institute of Environmental Geosciences (IGE), France  
 *Project:* River water quality (nutrients, carbon, phytoplankton, greenhouse gases) and development of a biogeochemical model (1D reactive transport) for tropical estuaries
 
-**Master Internship** (6 months) &nbsp;&nbsp;<span style="float:right;">08/2017–07/2018</span>  
+**Master Internship** (6 months) <span style="float:right;">08/2017–07/2018</span>  
 Institute of Environmental Geosciences (IGE), France  
 *Project:* Implementation of a nutrient dynamics model for the Saigon River using C language
 
-**Principal Investigator** (6 months) &nbsp;&nbsp;<span style="float:right;">12/2016–08/2017</span>  
+**Principal Investigator** (6 months) <span style="float:right;">12/2016–08/2017</span>  
 Young Investigator Project, HCMUT, Vietnam  
 *Project:* Design of a pilot scale constructed wetland and analysis of wastewater
 
-**Lab Technician** (18 months) &nbsp;&nbsp;<span style="float:right;">12/2015–06/2017</span>  
+**Lab Technician** (18 months) <span style="float:right;">12/2015–06/2017</span>  
 Asian Center for Water Research (CARE-RESCIF), Vietnam  
 *Responsibilities:* Water sampling and operation of ICP-OES analyzer, TOC-V
 
-**Bachelor Internship** (6 months) &nbsp;&nbsp;<span style="float:right;">06/2015–12/2015</span>  
+**Bachelor Internship** (6 months) <span style="float:right;">06/2015–12/2015</span>  
 Project: Development of "passive sampling" for the analysis of antibiotics in river  
 *Responsibilities:* Sampling and pretreatment of river water samples for antibiotics measurement
 
