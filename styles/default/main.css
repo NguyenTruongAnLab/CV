@@ -18,7 +18,7 @@ body {
   max-width: 800px;
   margin: 1.2em auto;
   padding: 0 0.5em;
-  line-height: 1.35;
+  line-height: 1.45;
 }
 
 /* Headings */
@@ -122,8 +122,20 @@ li {
   clear: both;
 }
 
+/* Increased paragraph spacing for clear separation of entries */
 p, .cv-desc {
-  margin-bottom: 0.13em;
+  margin-bottom: 0.7em;
+}
+
+/* Optional: more space after paragraphs that start with bold job titles */
+p strong:first-child {
+  display: block;
+  margin-top: 1em;
+}
+
+/* Optional: even more separation for job entries */
+p + p strong:first-child {
+  margin-top: 1.1em;
 }
 
 blockquote {
