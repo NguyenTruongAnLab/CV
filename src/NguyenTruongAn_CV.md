@@ -27,21 +27,6 @@ I am a postdoc researcher with interests in:
 > Water quality modelling in rivers and estuaries.  
 > Eutrophication, greenhouse gases emissions and biogeochemical processes.
 
-## Teaching Experience and Qualifications
-
-> **Teaching Assistant at Grenoble INP** (2019-2025)  
-> • Delivered lectures on [Water Quality and Treatment](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte) at Grenoble INP  
-> • Delivered tutorials on [River water quality modelling](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte) at Grenoble INP  
-> • Conducted laboratory sessions on water quality analysis techniques  
-> • Supervised master students
->
-> **Teaching Interests:**  
-> • Environmental Modeling and Simulation  
-> • Water Quality Management  
-> • Biogeochemical Processes in Aquatic Environments  
-> • Data Analysis for Environmental Sciences  
-> • GIS Applications in Environmental Research
-
 ## Education
 
 #### PhD thesis in Environmental Science `11/2018-12/2021`
@@ -58,6 +43,21 @@ Grenoble Institute of Technology (Grenoble INP, France)
 
 Ho Chi Minh City University of Technology (HCMUT, Vietnam)  
 *Antibiotic pollution in the Saigon River, Vietnam*
+
+## Teaching Experience and Qualifications
+
+> **Teaching Assistant at Grenoble INP** (2019-2025)  
+> • Delivered lectures on [Water Quality and Treatment](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte) at Grenoble INP  
+> • Delivered tutorials on [River water quality modelling](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte) at Grenoble INP  
+> • Conducted laboratory sessions on water quality analysis techniques  
+> • Supervised master students
+>
+> **Teaching Interests:**  
+> • Environmental Modeling and Simulation  
+> • Water Quality Management  
+> • Biogeochemical Processes in Aquatic Environments  
+> • Data Analysis for Environmental Sciences  
+> • GIS Applications in Environmental Research
 
 ## Professional Experience
 
