@@ -1,198 +1,175 @@
-/*
- * Academic CV Style for Pandoc - v3 (Clean & Compact)
- * A professional, modern, and space-efficient layout designed for Pandoc.
- * Uses Flexbox for clean alignment and a modern font stack.
- *
- * by Gemini
- */
+/* Compact, Modern Academic CV for Pandoc Markdown to PDF */
 
-/* ----- Font Import ----- */
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Lato:wght@400;700&display=swap');
-
-/* ----- Reset & Base ----- */
-html, body, div, span, h1, h2, h3, h4, p, blockquote, pre, a, code, em,
-img, strong, ol, ul, li, section {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    color: #333;
-    box-sizing: border-box;
+/* Reset */
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ul, ol, li, table, th, td, caption, strong, em, code {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #222;
+  font: inherit;
 }
 
-/* ----- Main Layout ----- */
+/* Base */
 body {
-    font-family: 'Lato', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 11pt;
-    background: #fff;
-    color: #333;
-    max-width: 8.5in;
-    margin: 0.75in auto;
-    padding: 0 0.5in;
-    line-height: 1.45;
+  font-family: 'Segoe UI', Arial, Verdana, sans-serif;
+  font-size: 11.5pt;
+  background: #fff;
+  color: #222;
+  max-width: 800px;
+  margin: 1.2em auto;
+  padding: 0 0.5em;
+  line-height: 1.35;
 }
 
-/* ----- Headings ----- */
+/* Headings */
 h1, h2, h3, h4 {
-    font-family: 'Arvo', 'Merriweather', 'Georgia', serif;
-    font-weight: 700;
+  font-family: 'Segoe UI', Arial, Verdana, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #493716;
+  margin-bottom: 0.2em;
 }
-
 h1 {
-    font-size: 1.8em;
-    text-align: center;
-    color: #2c3e50;
-    margin: 0 0 0.4em 0;
-    padding-bottom: 0.2em;
-    border-bottom: 1.5px solid #bdc3c7;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: left;
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
+  border-bottom: 1.5px solid #d9c293;
+  padding-bottom: 0.15em;
 }
-
 h2 {
-    font-size: 1.1em;
-    color: #34495e;
-    margin-top: 1.4em;
-    margin-bottom: 0.6em;
-    padding-bottom: 0.15em;
-    border-bottom: 1px solid #ecf0f1;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
+  font-size: 1.13em;
+  margin-top: 1.2em;
+  border-bottom: 1px solid #e6c89f;
+  padding-bottom: 0.1em;
 }
-
-/* ----- Styling for Experience/Education Entries ----- */
-/* This targets H4 headings for job/degree titles in Markdown */
+h3 {
+  font-size: 1.04em;
+  margin-top: 0.8em;
+}
 h4 {
-    font-family: 'Lato', sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-top: 1em;
-    margin-bottom: 0.2em;
-    display: flex; /* Use Flexbox for alignment */
-    justify-content: space-between; /* Pushes title and date apart */
-    align-items: baseline;
+  font-size: 1em;
+  margin-top: 0.7em;
 }
 
-/* This targets the `code` block inside an H4 for the date */
-h4 > code {
-    font-family: 'Lato', sans-serif;
-    background: #ecf0f1;
-    color: #7f8c8d;
-    border-radius: 3px;
-    padding: 2px 7px;
-    font-size: 0.8em;
-    font-weight: 700;
-    white-space: nowrap;
-    border: none;
+hr {
+  border: none;
+  border-top: 1px solid #d8d8d8;
+  margin: 1em 0 1em 0;
 }
 
-/* Style the institution paragraph (first p after h4) */
-h4 + p {
-    margin-top: 0;
-    margin-bottom: 0.1em;
-    font-weight: 700;
-    color: #7f8c8d;
-    font-style: italic;
+/* Section spacing */
+section, .section-block {
+  margin-bottom: 0.9em;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
-/* Style the project description paragraph (second p after h4) */
-h4 + p + p {
-    margin-top: 0;
-    margin-bottom: 0.2em;
-    font-style: normal;
+/* Contact block */
+.contact-block {
+  font-size: 1em;
+  margin-bottom: 0.4em;
+  margin-top: 0.2em;
+}
+.contact-block a {
+  margin-right: 0.3em;
 }
 
-/* ----- Paragraphs, Lists, Blockquotes ----- */
-p {
-    margin-bottom: 0.5em;
-    text-align: left;
-}
-blockquote {
-    border-left: 3px solid #95a5a6;
-    background: #f8f9f9;
-    color: #555;
-    font-style: italic;
-    margin: 0.8em 0 0.8em 1.2em;
-    padding: 0.7em 1.2em;
-    border-radius: 4px;
-}
-
-/* ----- Lists ----- */
+/* Lists */
 ul, ol {
-    margin-left: 1.2em;
-    margin-bottom: 0.8em;
-    padding-left: 1em;
-}
-ul {
-    list-style-type: square;
-}
-ol {
-    list-style-type: decimal;
+  margin-left: 1.5em;
+  margin-bottom: 0.4em;
+  padding-left: 0.1em;
 }
 li {
-    margin-bottom: 0.4em;
-    padding-left: 0.2em;
+  margin-bottom: 0.08em;
 }
 
-/* ----- Links ----- */
+/* Education/Experience Entries */
+.cv-item {
+  margin-bottom: 0.32em;
+}
+.cv-title {
+  font-weight: bold;
+  font-size: 1em;
+  display: inline;
+}
+.cv-date {
+  float: right;
+  font-size: 1em;
+  color: #555;
+  font-weight: normal;
+}
+.cv-org {
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 0.1em;
+  display: block;
+}
+.cv-desc, .cv-proj {
+  font-size: 0.97em;
+  color: #1e1e1e;
+  margin-bottom: 0.01em;
+}
+.cv-proj, .cv-desc em {
+  font-style: italic;
+  color: #3a2a1a;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p, .cv-desc {
+  margin-bottom: 0.13em;
+}
+
+blockquote {
+  border-left: 2px solid #e6c89f;
+  background: #faf9f7;
+  color: #5c4a2b;
+  font-style: italic;
+  margin: 0.5em 0 0.5em 0;
+  padding: 0.4em 0.9em;
+  border-radius: 3px;
+}
+
+/* Links */
 a {
-    color: #2980b9;
-    text-decoration: none;
-    border-bottom: 1px dotted #3498db;
+  color: #1b4c8a;
+  text-decoration: underline;
+  border-bottom: none;
+  word-break: break-all;
 }
-a:hover {
-    color: #c0392b;
-    border-bottom-color: #e74c3c;
+a:hover { color: #7c5b2c; }
+
+/* Publications/References */
+ol, ul {
+  margin-left: 1.6em;
+  font-size: 0.99em;
+}
+ol li, ul li {
+  margin-bottom: 0.18em;
 }
 
-/* ----- Horizontal rule ----- */
-hr {
-    border: 0;
-    border-top: 1px solid #bdc3c7;
-    margin: 1.5em 0;
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8em 0;
+  font-size: 0.96em;
+}
+th, td {
+  border: 1px solid #e6d7c0;
+  padding: 0.28em 0.5em;
+}
+th {
+  background: #f7f4ea;
+  font-weight: bold;
 }
 
-/* ----- Miscellaneous ----- */
-strong, b {
-    font-weight: 700;
-    color: #000;
-}
-em, i {
-    font-style: italic;
-}
-
-/* ----- Contact block ----- */
-/* This styles the paragraph right after the main title (H1) */
-h1 + p {
-    text-align: center;
-    font-size: 0.9em;
-    margin-bottom: 1em;
-    line-height: 1.5;
-    color: #7f8c8d;
-}
-h1 + p a {
-    margin: 0 0.3em;
-    color: #34495e;
-    border-bottom: 1px dotted #95a5a6;
-}
-
-/* ----- Print-specific optimizations ----- */
-@media print {
-    body {
-        font-size: 10pt;
-        margin: 0.5in;
-        padding: 0;
-    }
-    a {
-        color: #000 !important;
-        border-bottom: none !important;
-        text-decoration: none !important;
-    }
-    h4 > code {
-        background: #eee !important;
-        color: #555 !important;
-    }
-}
+/* Misc */
+strong, b { font-weight: bold; color: #2d230f; }
+em, i { font-style: italic; }
