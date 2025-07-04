@@ -5,9 +5,8 @@ margin-right: 1.8cm
 margin-top: 2cm
 margin-bottom: 1.5cm
 papersize: a4
+
 style: default
-date: 2025-07-04 11:23:32
-author: NguyenTruongAnLabPlease
 ---
 
 <hr />
