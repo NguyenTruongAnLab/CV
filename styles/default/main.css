@@ -1,246 +1,177 @@
-/* Academic CV: Professional, Clean, and Modern Layout for Markdown-to-PDF (No HTML or Markdown in CSS) */
+/* Academic CV: Professional, Clean, and Modern Layout for Markdown-to-PDF */
 
 /* --- Reset & Base --- */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
-address, big, cite, code, del, dfn, em, img, ins, kbd, q, s,
-samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
-caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
-details, embed, figure, figcaption, footer, header, hgroup, menu,
-nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    color: #222;
-    box-sizing: border-box;
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, ul, ol, li, table, th, td, caption, strong, em, code {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #222;
+  font: inherit;
 }
 
-/* --- Layout --- */
 body {
-    font-family: 'Segoe UI', 'Liberation Sans', Arial, Verdana, sans-serif;
-    font-size: 13.5pt;
-    background: #fff;
-    color: #1a1a1a;
-    max-width: 900px;
-    margin: 2.5em auto;
-    padding: 2em 2.5em 2.5em 2.5em;
-    box-shadow: 0 6px 22px 1px rgba(0,0,0,0.08);
-    border-radius: 14px;
-    line-height: 1.6;
+  font-family: 'Segoe UI', 'Liberation Sans', Arial, Verdana, sans-serif;
+  font-size: 13.5pt;
+  background: #fff;
+  color: #1a1a1a;
+  max-width: 900px;
+  margin: 2.5em auto;
+  padding: 2em 2.5em 2.5em 2.5em;
+  box-shadow: 0 6px 22px 1px rgba(0,0,0,0.08);
+  border-radius: 14px;
+  line-height: 1.6;
 }
 
 /* --- Headings --- */
 h1, h2, h3, h4 {
-    font-family: 'Merriweather', 'Georgia', 'Times New Roman', serif;
-    font-variant-caps: small-caps;
-    font-weight: 600;
-    letter-spacing: 0.2px;
+  font-family: 'Merriweather', 'Georgia', 'Times New Roman', serif;
+  font-variant-caps: small-caps;
+  font-weight: 600;
+  letter-spacing: 0.2px;
 }
 h1 {
-    font-size: 2.2em;
-    text-align: center;
-    color: #3a2406;
-    margin: 1em 0 0.5em 0;
-    border-bottom: 2px solid #e6c89f;
-    padding-bottom: 0.15em;
+  font-size: 2.2em;
+  text-align: center;
+  color: #3a2406;
+  margin: 1em 0 0.5em 0;
+  border-bottom: 2px solid #e6c89f;
+  padding-bottom: 0.15em;
 }
 h2 {
-    font-size: 1.15em;
-    color: #684b25;
-    margin-top: 1.7em;
-    margin-bottom: 0.9em;
-    background: none;
-    border-left: 5px solid #e6c89f;
-    padding-left: 0.75em;
-    font-weight: 600;
+  font-size: 1.15em;
+  color: #684b25;
+  margin-top: 1.7em;
+  margin-bottom: 0.9em;
+  border-left: 5px solid #e6c89f;
+  padding-left: 0.75em;
 }
 h3 {
-    font-size: 1.05em;
-    color: #905b1f;
-    margin-top: 1.1em;
-    margin-bottom: 0.1em;
-    padding-left: 0.35em;
-    background: none;
+  font-size: 1.05em;
+  color: #905b1f;
+  margin-top: 1.1em;
+  margin-bottom: 0.1em;
+  padding-left: 0.35em;
 }
 h4 {
-    font-size: 1em;
-    margin-top: 0.5em;
-    margin-bottom: 0.15em;
-    color: #6c5a44;
-    padding-left: 0.1em;
-    font-weight: 500;
+  font-size: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.15em;
+  color: #6c5a44;
+  padding-left: 0.1em;
+  font-weight: 500;
 }
 
-/* --- Section Block for Experience --- */
-.section-block {
-    margin-bottom: 1.7em;
-    padding-bottom: 1.2em;
-    border-bottom: 1px solid #e9e6e1;
-}
-.section-block:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
+/* --- Section Blocks --- */
+hr {
+  border: 0;
+  border-top: 1.3px solid #e6c89f;
+  margin: 1.7em 0 1.4em 0;
 }
 
-/* --- Experience Entries --- */
-.position-block {
-    margin-bottom: 1.2em;
-}
-.position-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0.2em;
-}
-.position-title {
-    font-weight: 600;
-    color: #3a2406;
-    font-size: 1.05em;
-    letter-spacing: 0.15px;
-}
-.position-duration {
-    background: #f3f1eb;
-    color: #684b25;
-    border-radius: 4px;
-    padding: 3px 9px;
-    font-size: 0.9em;
-    font-weight: 500;
-    margin-left: 1em;
-    white-space: nowrap;
-}
-.position-institution {
-    font-weight: 500;
-    color: #684b25;
-    margin-top: 0.05em;
-    margin-bottom: 0.1em;
-    display: block;
-}
-.position-project {
-    font-style: italic;
-    color: #5b4322;
-    margin-bottom: 0.1em;
-}
-.position-description {
-    margin-top: 0.1em;
-    font-size: 0.98em;
-    color: #333;
-}
-.position-link {
-    color: #205080;
-    border-bottom: 1px dotted #b8a48a;
-    text-decoration: none;
-    font-size: 0.97em;
-}
-.position-link:hover {
-    color: #ad7549;
-    border-bottom: 1px solid #ad7549;
-}
-
-/* --- Paragraphs, Lists, Blockquotes --- */
+/* --- Paragraphs & Blockquotes --- */
 p {
-    margin-bottom: 0.6em;
-    text-align: left;
-    text-justify: inter-word;
-    width: 100%;
-    font-size: 1.03em;
+  margin-bottom: 0.6em;
+  text-align: left;
+  text-justify: inter-word;
+  font-size: 1.03em;
 }
 blockquote {
-    border-left: 3px solid #bfa067;
-    background: #f9f7f1;
-    color: #776136;
-    font-style: italic;
-    margin: 0.5em 0 0.5em 0;
-    padding: 0.6em 1.2em;
-    border-radius: 6px;
+  border-left: 3px solid #bfa067;
+  background: #f9f7f1;
+  color: #776136;
+  font-style: italic;
+  margin: 0.5em 0 0.5em 0;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
 }
 
 /* --- Lists --- */
 ul, ol {
-    margin-left: 1.2em;
-    margin-bottom: 0.8em;
-    padding-left: 1em;
-    width: auto;
+  margin-left: 1.2em;
+  margin-bottom: 0.8em;
+  padding-left: 1em;
 }
-ul {
-    list-style-type: disc;
-}
-ol {
-    list-style-type: decimal;
-}
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
 li {
-    margin-bottom: 0.4em;
-    padding-left: 0.3em;
-    line-height: 1.5;
+  margin-bottom: 0.4em;
+  padding-left: 0.3em;
+  line-height: 1.5;
+}
+
+/* --- Tables --- */
+table {
+  width: 98%;
+  margin: 1.1em auto;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 1em;
+}
+th, td {
+  border: 1px solid #e6d7c0;
+  padding: 0.45em 0.75em;
+  text-align: left;
+}
+th {
+  background: #f8f5ee;
+  font-weight: bold;
+}
+caption {
+  font-size: 1.04em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+/* --- Code Blocks --- */
+code, pre {
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+  background: #f7f3ed;
+  color: #684a1e;
+  padding: 0.08em 0.35em;
+  border-radius: 3px;
 }
 
 /* --- Links --- */
 a {
-    color: #205080;
-    text-decoration: none;
-    border-bottom: 1px dotted #b8a48a;
-    transition: color 0.15s;
+  color: #205080;
+  text-decoration: none;
+  border-bottom: 1px dotted #b8a48a;
+  transition: color 0.15s;
 }
 a:hover {
-    color: #ad7549;
-    text-decoration: none;
-    border-bottom: 1px solid #ad7549;
-}
-
-/* --- Horizontal rule --- */
-hr {
-    border: 0;
-    border-top: 1.3px solid #e6c89f;
-    margin: 1.7em 0 1.4em 0;
+  color: #ad7549;
+  border-bottom: 1px solid #ad7549;
 }
 
 /* --- Miscellaneous --- */
-strong, b {
-    font-weight: bold;
-    color: #3c2a10;
-}
-em, i {
-    font-style: italic;
-}
+strong, b { font-weight: bold; color: #3c2a10; }
+em, i { font-style: italic; }
 
-/* --- Contact block and references --- */
+/* --- Contact block and references (if using divs in markdown) --- */
 .contact-block {
-    text-align: center;
-    font-size: 1.07em;
-    margin-bottom: 1.3em;
+  text-align: center;
+  font-size: 1.07em;
+  margin-bottom: 1.3em;
 }
 .contact-block a {
-    margin: 0 0.4em;
+  margin: 0 0.4em;
 }
-
 .references-list {
-    margin-top: 1.1em;
-    padding: 1.2em 1.5em;
-    border-left: 3px solid #e6c89f;
-    background: #faf8f4;
-    border-radius: 6px;
+  margin-top: 1.1em;
+  padding: 1.2em 1.5em;
+  border-left: 3px solid #e6c89f;
+  background: #faf8f4;
+  border-radius: 6px;
 }
 .references-list p {
-    margin-bottom: 0.8em;
+  margin-bottom: 0.8em;
 }
 
-/* --- Responsive --- */
+/* --- Responsive for HTML preview only (not for PDF/print) --- */
 @media (max-width: 700px) {
-    body {
-        padding: 1.5em;
-        font-size: 12pt;
-    }
-    .position-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .position-duration {
-        margin-left: 0;
-        margin-top: 0.3em;
-    }
+  body {
+    padding: 1.5em;
+    font-size: 12pt;
+  }
 }
