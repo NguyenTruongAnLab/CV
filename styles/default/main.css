@@ -1,12 +1,6 @@
-/*
- * Academic CV Style
- * A professional, clean, and modern layout for Pandoc.
- */
+/* Academic CV: Professional, Clean, and Modern Layout for Markdown-to-PDF (No HTML or Markdown in CSS) */
 
-/* ----- Font Import ----- */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Segoe+UI:wght@400;500;600&display=swap');
-
-/* ----- Reset & Base ----- */
+/* --- Reset & Base --- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
 address, big, cite, code, del, dfn, em, img, ins, kbd, q, s,
@@ -25,35 +19,35 @@ nav, output, ruby, section, summary, time, mark, audio, video {
     box-sizing: border-box;
 }
 
-/* ----- Main Layout ----- */
+/* --- Layout --- */
 body {
     font-family: 'Segoe UI', 'Liberation Sans', Arial, Verdana, sans-serif;
-    font-size: 13pt;
+    font-size: 13.5pt;
     background: #fff;
     color: #1a1a1a;
     max-width: 900px;
-    margin: 2em auto;
-    padding: 2em 2.5em;
+    margin: 2.5em auto;
+    padding: 2em 2.5em 2.5em 2.5em;
+    box-shadow: 0 6px 22px 1px rgba(0,0,0,0.08);
+    border-radius: 14px;
     line-height: 1.6;
 }
 
-/* ----- Headings ----- */
+/* --- Headings --- */
 h1, h2, h3, h4 {
     font-family: 'Merriweather', 'Georgia', 'Times New Roman', serif;
     font-variant-caps: small-caps;
     font-weight: 600;
     letter-spacing: 0.2px;
 }
-
 h1 {
     font-size: 2.2em;
     text-align: center;
     color: #3a2406;
-    margin: 0 0 0.5em 0;
+    margin: 1em 0 0.5em 0;
     border-bottom: 2px solid #e6c89f;
     padding-bottom: 0.15em;
 }
-
 h2 {
     font-size: 1.15em;
     color: #684b25;
@@ -64,7 +58,6 @@ h2 {
     padding-left: 0.75em;
     font-weight: 600;
 }
-
 h3 {
     font-size: 1.05em;
     color: #905b1f;
@@ -73,7 +66,6 @@ h3 {
     padding-left: 0.35em;
     background: none;
 }
-
 h4 {
     font-size: 1em;
     margin-top: 0.5em;
@@ -83,32 +75,97 @@ h4 {
     font-weight: 500;
 }
 
-/* ----- Paragraphs, Lists, Blockquotes ----- */
+/* --- Section Block for Experience --- */
+.section-block {
+    margin-bottom: 1.7em;
+    padding-bottom: 1.2em;
+    border-bottom: 1px solid #e9e6e1;
+}
+.section-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* --- Experience Entries --- */
+.position-block {
+    margin-bottom: 1.2em;
+}
+.position-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.2em;
+}
+.position-title {
+    font-weight: 600;
+    color: #3a2406;
+    font-size: 1.05em;
+    letter-spacing: 0.15px;
+}
+.position-duration {
+    background: #f3f1eb;
+    color: #684b25;
+    border-radius: 4px;
+    padding: 3px 9px;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-left: 1em;
+    white-space: nowrap;
+}
+.position-institution {
+    font-weight: 500;
+    color: #684b25;
+    margin-top: 0.05em;
+    margin-bottom: 0.1em;
+    display: block;
+}
+.position-project {
+    font-style: italic;
+    color: #5b4322;
+    margin-bottom: 0.1em;
+}
+.position-description {
+    margin-top: 0.1em;
+    font-size: 0.98em;
+    color: #333;
+}
+.position-link {
+    color: #205080;
+    border-bottom: 1px dotted #b8a48a;
+    text-decoration: none;
+    font-size: 0.97em;
+}
+.position-link:hover {
+    color: #ad7549;
+    border-bottom: 1px solid #ad7549;
+}
+
+/* --- Paragraphs, Lists, Blockquotes --- */
 p {
     margin-bottom: 0.6em;
     text-align: left;
     text-justify: inter-word;
     width: 100%;
-    font-size: 1em;
+    font-size: 1.03em;
 }
 blockquote {
     border-left: 3px solid #bfa067;
     background: #f9f7f1;
     color: #776136;
     font-style: italic;
-    margin: 0.5em 0 0.8em 0;
+    margin: 0.5em 0 0.5em 0;
     padding: 0.6em 1.2em;
     border-radius: 6px;
 }
-blockquote p {
-    margin-bottom: 0;
-}
 
-/* ----- Lists ----- */
+/* --- Lists --- */
 ul, ol {
     margin-left: 1.2em;
     margin-bottom: 0.8em;
     padding-left: 1em;
+    width: auto;
 }
 ul {
     list-style-type: disc;
@@ -122,7 +179,7 @@ li {
     line-height: 1.5;
 }
 
-/* ----- Links ----- */
+/* --- Links --- */
 a {
     color: #205080;
     text-decoration: none;
@@ -135,14 +192,14 @@ a:hover {
     border-bottom: 1px solid #ad7549;
 }
 
-/* ----- Horizontal rule ----- */
+/* --- Horizontal rule --- */
 hr {
     border: 0;
     border-top: 1.3px solid #e6c89f;
     margin: 1.7em 0 1.4em 0;
 }
 
-/* ----- Miscellaneous ----- */
+/* --- Miscellaneous --- */
 strong, b {
     font-weight: bold;
     color: #3c2a10;
@@ -151,27 +208,39 @@ em, i {
     font-style: italic;
 }
 
-/* ----- Custom Blocks for CV Structure ----- */
-/* Pandoc doesn't easily support adding custom classes to sections.
-   This CSS targets semantic HTML that Pandoc generates. */
-
-/* Style the contact info block right after the main H1 title */
-h1 + p {
+/* --- Contact block and references --- */
+.contact-block {
     text-align: center;
-    font-size: 1.05em;
+    font-size: 1.07em;
     margin-bottom: 1.3em;
-    line-height: 1.7;
 }
-h1 + p > a {
+.contact-block a {
     margin: 0 0.4em;
 }
 
-/* Style each experience/education entry */
-h3 + p, h4 + p {
-    margin-top: 0.1em;
+.references-list {
+    margin-top: 1.1em;
+    padding: 1.2em 1.5em;
+    border-left: 3px solid #e6c89f;
+    background: #faf8f4;
+    border-radius: 6px;
+}
+.references-list p {
+    margin-bottom: 0.8em;
 }
 
-/* Add spacing between list of publications/conferences */
-ol > li {
-    margin-bottom: 0.8em;
+/* --- Responsive --- */
+@media (max-width: 700px) {
+    body {
+        padding: 1.5em;
+        font-size: 12pt;
+    }
+    .position-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .position-duration {
+        margin-left: 0;
+        margin-top: 0.3em;
+    }
 }
