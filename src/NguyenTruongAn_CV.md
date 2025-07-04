@@ -20,9 +20,16 @@ Nguyễn Trường An, PhD
 [Orcid](https://orcid.org/0000-0003-2787-7534)  
 [GoogleScholar](https://scholar.google.com/citations?hl=en&user=wxhdH1UAAAAJ&view_op=list_works&sortby=pubdate)
 
+## Currently
+
+I am a postdoc researcher with interests in:
+
+> Water quality modelling in rivers and estuaries.  
+> Eutrophication, greenhouse gases emissions and biogeochemical processes.
+
 ## Teaching Experience and Qualifications
 
-> **Teaching Assistant** (2019-2025)  
+> **Teaching Assistant at Grenoble INP** (2019-2025)  
 > • Delivered lectures on [Water Quality and Treatment](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte) at Grenoble INP  
 > • Delivered tutorials on [River water quality modelling](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte) at Grenoble INP  
 > • Conducted laboratory sessions on water quality analysis techniques  
@@ -34,13 +41,6 @@ Nguyễn Trường An, PhD
 > • Biogeochemical Processes in Aquatic Environments  
 > • Data Analysis for Environmental Sciences  
 > • GIS Applications in Environmental Research
-
-## Currently
-
-I am a postdoc researcher with interests in:
-
-> Water quality modelling in rivers and estuaries.  
-> Eutrophication, greenhouse gases emissions and biogeochemical processes.
 
 ## Education
 
@@ -139,14 +139,14 @@ Mapping and spatial analysis with QGIS and ArcGIS
 
 ### Conferences
 
-1. T.A. Nguyen, et al., (2025). Greenhouse Gas Emissions and Drivers in Tropical Estuaries: Insights from the Mekong Delta and Saigon River (Vietnam). *International Conference I.S.Rivers*, 30 June to 4 July 2025, Lyon, France. Oral presentation. [PDF](https://www.assograie.org/isrivers/wp-content/uploads/2025/06/D3-iSR25-288-Nguyen-Truong-An.pdf)
-2. T.A. Nguyen, et al., (2024). Past, Present, and Future Greenhouse Gases in Tropical Estuaries. *International Conference I.S.Rivers*, 25 to 27 Nov 2024, Sète, France. [Oral presentation](https://www.youtube.com/watch?v=dk3yjBCyKSk)
+1. T.A. Nguyen, et al., (2025). Greenhouse Gas Emissions and Drivers in Tropical Estuaries: Insights from the Mekong Delta and Saigon River (Vietnam). *International Conference I.S.Rivers*, 30 June to 4 July 2025, Lyon, France. [Oral](https://www.assograie.org/isrivers/wp-content/uploads/2025/06/D3-iSR25-288-Nguyen-Truong-An.pdf) presentation.
+2. T.A. Nguyen, et al., (2024). Past, Present, and Future Greenhouse Gases in Tropical Estuaries. *International Conference I.S.Rivers*, 25 to 27 Nov 2024, Sète, France. [Presentation Video](https://www.youtube.com/watch?v=dk3yjBCyKSk)
 3. T.A. Nguyen, et al., (2022). Spatial and temporal variation of greenhouse gas emissions in an urbanized tropical estuary (the Saigon River, Vietnam). *ECSA 59*, September 5-8, 2022, Kursaal, San Sebastian, Spain. [Poster](https://pure.port.ac.uk/ws/portalfiles/portal/79663928/Oral_programme_ECSA2022_24.8.22.pdf)
 4. T.A. Nguyen, et al., (2022). Eutrophication management scenarios in the Saigon River by using C-GEM, an estuarine biogeochemical model. *ECSA 59*, September 5-8, 2022, Kursaal, San Sebastian, Spain. [Poster](https://pure.port.ac.uk/ws/portalfiles/portal/79663928/Oral_programme_ECSA2022_24.8.22.pdf)
 5. T.A. Nguyen, et al., (2022). Impact of anthropogenic inputs on greenhouse gas emissions in the tropical Saigon River Estuary. *International Symposium on Water Sustainability & Green Technologies*, November 25-26, 2022, Ho Chi Minh City, Vietnam. [Poster](https://conferences.hcmut.edu.vn/conference/625d24f5a8d3f37fb73f0afb/oTGhnW-m12ukZ_1L-QD7cL-f.pdf)
 6. T.A. Nguyen, et al., (2022). Modeling the seasonal nutrients dynamics and phytoplankton development in Saigon River Estuary, Vietnam. *International Symposium on Ecohydraulics*, July 4-8, 2022, Lyon, France. [Poster](https://www.graie.org/graie/graiedoc/doc_telech/isrivers2022/Poster%20Mardi%20TH2/20_Poster_TH2_ISRIvers22.pdf)
 7. T.A. Nguyen, et al., (2020). Modelling scenarios by C-GEM, an estuarine biogeochemical model. *International Conference on Water, Megacities and Global Change*, December 1-4, 2020, Paris (Web-Seminar), Vietnam. [Oral](https://hal.science/hal-03420862v1/document)
-8. T.A. Nguyen, et al., (2020). Evaluating estuarine responses to modification of nutrient loads from megacity by a generic reactive-transport model. *International Symposium on Ecohydraulics*, December 23-24, 2019, Lyon, France. [Video](https://www.iahr.org/video/clip?id=305)
+8. T.A. Nguyen, et al., (2020). Evaluating estuarine responses to modification of nutrient loads from megacity by a generic reactive-transport model. *International Symposium on Ecohydraulics*, December 23-24, 2019, Lyon, France. [Presentation Video](https://www.iahr.org/video/clip?id=305)
 9. T.A. Nguyen, et al., (2019). Self‐purification capacity of a tropical estuary using a generic reactive-transport estuarine model. *Green Technologies for Sustainable Water*, December 1-5, 2019, Ho Chi Minh City, Vietnam. Poster
 10. T.A. Nguyen, et al., (2019). Modelling nutrient dynamics in a tropical estuary under human pressure: case study of the Saigon tidal River (Southern Vietnam). *International Conference on Water Resources and Coastal Engineering*, April 25, 2019, Da Nang City, Vietnam. Oral
 11. T.A. Nguyen., et al., (2016). Analysis of antibiotic and pesticide residues in shrimp farm waters using passive sampling. *SETAC Asia/Pacific Conference*, September 16-19, 2016, Singapore. [Oral](https://infoscience.epfl.ch/entities/publication/d60003bc-4464-4e18-adf7-598709b87117)
