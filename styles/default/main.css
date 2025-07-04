@@ -123,10 +123,9 @@ table {
 
 body {
   font: normal normal 400;
-  font-size: 14pt;
+  font-size: 12pt;
   line-height: 1.3em;
-  /* font-family: Verdana,sans-serif; */
-  font-family: Latin Modern Roman, Latin Modern Math, serif;
+  font-family: Verdana,sans-serif;
 }
 
 ul {
