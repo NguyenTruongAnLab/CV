@@ -26,7 +26,7 @@ Nguyễn Trường An, PhD
 > • Delivered lectures on [Water Quality and Treatment](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte) at Grenoble INP  
 > • Delivered tutorials on [River water quality modelling](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte) at Grenoble INP  
 > • Conducted laboratory sessions on water quality analysis techniques  
-> • Supervised master students in research projects  
+> • Supervised master students
 >
 > **Teaching Interests:**  
 > • Environmental Modeling and Simulation  
@@ -70,15 +70,12 @@ Institut Géosciences Environnement (IGE), Institut de recherche pour le dévelo
 #### Postdoctoral researcher (22 months) `05/2022-02/2024`
 
 INRAE, l'Institut national de recherche pour l'agriculture, l'alimentation et l'environnement  
-*Studying the evolution of carbonate system at Loire River by using high resolution datasets*  
-[Publication 1](https://aslopubs.onlinelibrary.wiley.com/doi/am-pdf/10.1002/lno.70016)  
-[Publication 2](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-1478/)
+*Studying the evolution of carbonate system at Loire River by using high resolution datasets* 
 
 #### Doctoral contract (37 months) `11/2018 – 12/2021`
 
 Institute of Environmental Geosciences (IGE), France  
-*River water quality (nutrients, carbon, phytoplankton, greenhouse gases) and development of a biogeochemical model (1D reactive transport) for tropical estuaries*  
-<https://www.ige-grenoble.fr/Urbanized-tropical-estuaries-hot-spots-of-greenhouse-gas-emissions>
+*River water quality (nutrients, carbon, phytoplankton, greenhouse gases) and development of a biogeochemical model (1D reactive transport) for tropical estuaries* 
 
 #### Master program (6 months internship) `08/2017-07/2018`
 
