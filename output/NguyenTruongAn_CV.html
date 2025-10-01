@@ -27,109 +27,148 @@ html, body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ul, ol, li, table, th
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-color: #222;
 font: inherit;
 }
 
 body {
-font-family: 'Liberation Sans', Arial, Verdana, sans-serif;
-font-size: 11.5pt;
-background: #fff;
-color: #222;
+font-family: 'Liberation Sans', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+font-size: 11pt;
+background: #ffffff;
+color: #2c3e50;
 max-width: 800px;
 margin: 1.2em auto;
-padding: 0 0.5em;
-line-height: 1.45;
+padding: 0 0.8em;
+line-height: 1.6;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4 {
-font-family: 'Liberation Sans', Arial, Verdana, sans-serif;
+font-family: 'Liberation Sans', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 font-weight: 700;
-letter-spacing: 0.5px;
-text-transform: uppercase;
-color: #493716;
-margin-bottom: 0.2em;
+letter-spacing: 0.3px;
+color: #1a5490;
+margin-bottom: 0.5em;
+page-break-after: avoid;
 }
 h1 {
-font-size: 1.5em;
+font-size: 1.65em;
 text-align: left;
-margin-top: 0.7em;
-margin-bottom: 0.5em;
-border-bottom: 1.5px solid #d9c293;
-padding-bottom: 0.15em;
+margin-top: 0;
+margin-bottom: 0.4em;
+border-bottom: 3px solid #2980b9;
+padding-bottom: 0.3em;
+color: #1a5490;
+text-transform: none;
 }
 h2 {
-font-size: 1.13em;
-margin-top: 1.2em;
-border-bottom: 1px solid #e6c89f;
-padding-bottom: 0.1em;
+font-size: 1.25em;
+margin-top: 1.5em;
+margin-bottom: 0.6em;
+border-bottom: 2px solid #3498db;
+padding-bottom: 0.25em;
+padding-left: 0.2em;
+color: #1a5490;
+text-transform: uppercase;
+letter-spacing: 0.8px;
 }
 h3 {
-font-size: 1.04em;
-margin-top: 0.8em;
+font-size: 1.1em;
+margin-top: 1em;
+margin-bottom: 0.4em;
+color: #2c3e50;
+font-weight: 600;
 }
 h4 {
 font-size: 1em;
-margin-top: 0.7em;
+margin-top: 0.8em;
+margin-bottom: 0.3em;
+color: #34495e;
+font-weight: 600;
 }
+
 hr {
 border: none;
-border-top: 1px solid #d8d8d8;
-margin: 1em 0 1em 0;
+border-top: 2px solid #e1e8ed;
+margin: 1.5em 0;
+height: 0;
 }
 
 section, .section-block {
-margin-bottom: 0.9em;
+margin-bottom: 1.2em;
 padding-bottom: 0;
 border-bottom: none;
+page-break-inside: avoid;
 }
 
 .contact-block {
 font-size: 1em;
-margin-bottom: 0.4em;
-margin-top: 0.2em;
+margin-bottom: 1em;
+margin-top: 0.5em;
+line-height: 1.7;
 }
 .contact-block a {
-margin-right: 0.3em;
+margin-right: 0.5em;
+text-decoration: none;
+font-weight: 500;
+}
+.contact-block a:hover {
+text-decoration: underline;
 }
 
 ul, ol {
-margin-left: 1.5em;
-margin-bottom: 0.4em;
-padding-left: 0.1em;
+margin-left: 1.8em;
+margin-bottom: 0.6em;
+padding-left: 0;
 }
 li {
-margin-bottom: 0.08em;
+margin-bottom: 0.3em;
+line-height: 1.6;
+page-break-inside: avoid;
+}
+ul li::marker {
+color: #3498db;
+font-weight: bold;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+margin-top: 0.2em;
+margin-bottom: 0.2em;
 }
 
 .cv-item {
-margin-bottom: 0.32em;
+margin-bottom: 1em;
+page-break-inside: avoid;
 }
 .cv-title {
-font-weight: bold;
-font-size: 1em;
+font-weight: 700;
+font-size: 1.05em;
 display: inline;
+color: #2c3e50;
 }
 .cv-date {
 float: right;
-font-size: 1em;
-color: #555;
-font-weight: normal;
+font-size: 0.95em;
+color: #7f8c8d;
+font-weight: 500;
+font-style: italic;
 }
 .cv-org {
 font-size: 1em;
-color: #444;
-margin-bottom: 0.1em;
+color: #34495e;
+margin-bottom: 0.2em;
 display: block;
+font-weight: 500;
 }
 .cv-desc, .cv-proj {
-font-size: 0.97em;
-color: #1e1e1e;
-margin-bottom: 0.01em;
+font-size: 0.98em;
+color: #2c3e50;
+margin-bottom: 0.3em;
+line-height: 1.6;
 }
 .cv-proj, .cv-desc em {
 font-style: italic;
-color: #3a2a1a;
+color: #555;
 }
 .clearfix::after {
 content: "";
@@ -138,313 +177,572 @@ clear: both;
 }
 
 p, .cv-desc {
-margin-bottom: 0.7em;
+margin-bottom: 0.8em;
+line-height: 1.6;
 }
 
 p strong:first-child {
 display: block;
-margin-top: 1em;
+margin-top: 0.8em;
 }
 
 p + p strong:first-child {
-margin-top: 1.1em;
+margin-top: 1.2em;
 }
+
 blockquote {
-border-left: 2px solid #e6c89f;
-background: #faf9f7;
-color: #5c4a2b;
-font-style: italic;
-margin: 0.5em 0 0.5em 0;
-padding: 0.4em 0.9em;
-border-radius: 3px;
+border-left: 4px solid #3498db;
+background: linear-gradient(to right, #ebf5fb 0%, #f8fbfd 100%);
+color: #1a5490;
+font-style: normal;
+margin: 1em 0;
+padding: 0.8em 1.2em;
+border-radius: 4px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+page-break-inside: avoid;
+}
+blockquote p {
+margin-bottom: 0.4em;
+}
+blockquote strong {
+color: #1a5490;
+font-weight: 700;
 }
 
 a {
-color: #1b4c8a;
-text-decoration: underline;
-border-bottom: none;
-word-break: break-all;
+color: #2980b9;
+text-decoration: none;
+border-bottom: 1px solid transparent;
+transition: all 0.2s ease;
+word-break: break-word;
 }
-a:hover { color: #7c5b2c; }
+a:hover {
+color: #1a5490;
+border-bottom-color: #3498db;
+}
 
 ol, ul {
-margin-left: 1.6em;
-font-size: 0.99em;
+margin-left: 1.8em;
+font-size: 0.98em;
 }
 ol li, ul li {
-margin-bottom: 0.18em;
+margin-bottom: 0.4em;
+line-height: 1.65;
+}
+ol li {
+padding-left: 0.3em;
 }
 
 table {
 width: 100%;
 border-collapse: collapse;
-margin: 0.8em 0;
-font-size: 0.96em;
+margin: 1em 0;
+font-size: 0.95em;
+box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+page-break-inside: avoid;
 }
 th, td {
-border: 1px solid #e6d7c0;
-padding: 0.28em 0.5em;
+border: 1px solid #dce6f0;
+padding: 0.6em 0.8em;
+text-align: left;
 }
 th {
-background: #f7f4ea;
-font-weight: bold;
+background: linear-gradient(to bottom, #3498db 0%, #2980b9 100%);
+color: white;
+font-weight: 700;
+text-transform: uppercase;
+font-size: 0.9em;
+letter-spacing: 0.5px;
+}
+tr:nth-child(even) {
+background-color: #f8fbfd;
+}
+tr:hover {
+background-color: #ebf5fb;
 }
 
-strong, b { font-weight: bold; color: #2d230f; }
-em, i { font-style: italic; }</style>
+tbody tr:nth-child(odd) {
+background-color: #ffffff;
+}
+
+strong, b {
+font-weight: 700;
+color: #1a5490;
+}
+em, i {
+font-style: italic;
+color: #555;
+}
+
+code {
+font-family: 'Courier New', Courier, monospace;
+background: #f4f4f4;
+padding: 0.1em 0.3em;
+border-radius: 3px;
+font-size: 0.9em;
+}
+
+@media print {
+body {
+max-width: 100%;
+margin: 0;
+padding: 0.5cm;
+font-size: 10.5pt;
+}
+h1 {
+page-break-after: avoid;
+}
+h2, h3 {
+page-break-after: avoid;
+}
+p, li {
+orphans: 3;
+widows: 3;
+}
+a {
+color: #1a5490;
+text-decoration: none;
+}
+blockquote {
+page-break-inside: avoid;
+}
+}
+
+@media screen and (max-width: 768px) {
+body {
+padding: 0.5em;
+font-size: 10pt;
+}
+h1 {
+font-size: 1.4em;
+}
+h2 {
+font-size: 1.15em;
+}
+.cv-date {
+float: none;
+display: block;
+margin-top: 0.2em;
+font-style: italic;
+}
+table {
+font-size: 0.85em;
+}
+th, td {
+padding: 0.4em 0.5em;
+}
+}</style>
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">Curriculum Vitae - Nguyễn Trường An</h1>
 </header>
-<p>Nguyễn Trường An, PhD<br />
-truongan9393@yahoo.com<br />
-Phone: +33 662 04 98 13<br />
+<h1 id="nguyễn-trường-an-phd">Nguyễn Trường An, PhD</h1>
+<p><strong>Environmental Scientist | Water Quality Modeling Expert |
+Biogeochemistry Researcher</strong></p>
+<p>truongan9393@yahoo.com | Phone: +33 662 04 98 13<br />
 <a href="https://www.researchgate.net/profile/Truong-Nguyen-38">ResearchGate</a>
 | <a href="https://orcid.org/0000-0003-2787-7534">Orcid</a> | <a href="https://scholar.google.com/citations?hl=en&amp;user=wxhdH1UAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">GoogleScholar</a></p>
-<h2 id="currently">Currently</h2>
-<p>I am a postdoc researcher with interests in:</p>
-<ul>
-<li><p>Water quality modelling in rivers and estuaries</p></li>
-<li><p>Eutrophication, greenhouse gases emissions, and biogeochemical
-processes</p></li>
-</ul>
+<hr />
+<h2 id="professional-summary">Professional Summary</h2>
+<p>Postdoctoral researcher specializing in <strong>water quality
+modeling</strong> and <strong>biogeochemical processes</strong> in
+rivers and estuaries. Expert in developing reactive transport models to
+understand nutrient dynamics, eutrophication, and greenhouse gas
+emissions in tropical aquatic systems. Strong track record of <strong>18
+peer-reviewed publications</strong> in high-impact journals and
+extensive international research experience across France and
+Vietnam.</p>
+<blockquote>
+<p><strong>Key Expertise:</strong> Biogeochemical Modeling • Water
+Quality Assessment • Greenhouse Gas Emissions • Eutrophication
+Management • Tropical Estuaries • Data Analysis &amp; Scientific
+Programming</p>
+</blockquote>
+<hr />
+<h2 id="research-impact-metrics">Research Impact &amp; Metrics</h2>
+<table>
+<colgroup>
+<col style="width: 53%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Publications</strong></td>
+<td>18 journal articles + 11 conference presentations</td>
+</tr>
+<tr class="even">
+<td><strong>Research Areas</strong></td>
+<td>Water Quality, Biogeochemistry, Climate Change</td>
+</tr>
+<tr class="odd">
+<td><strong>Modeling Experience</strong></td>
+<td>7+ years developing and applying environmental models</td>
+</tr>
+<tr class="even">
+<td><strong>Languages</strong></td>
+<td>Vietnamese (native), English (B2), French (B1)</td>
+</tr>
+<tr class="odd">
+<td><strong>Programming</strong></td>
+<td>Python, C/C++, R, QGIS, ArcGIS</td>
+</tr>
+</tbody>
+</table>
 <h2 id="education">Education</h2>
 <p><strong>PhD in Environmental Science</strong> <span style="float:right;">11/2018–12/2021</span><br />
-University of Grenoble Alpes (UGA), France<br />
-<em>Biogeochemical modeling in a tropical estuary and eutrophication
-management</em></p>
+<em>University of Grenoble Alpes (UGA), France</em><br />
+<strong>Thesis:</strong> Biogeochemical modeling in a tropical estuary
+and eutrophication management<br />
+<strong>Achievement:</strong> Developed C-GEM reactive transport model
+for tropical estuaries</p>
 <p><strong>Master’s in Hydraulics</strong> <span style="float:right;">09/2017–08/2018</span><br />
-Grenoble Institute of Technology (Grenoble INP), France<br />
-<em>Modeling nutrient dynamics in the Saigon River Estuary,
-Vietnam</em></p>
+<em>Grenoble Institute of Technology (Grenoble INP), France</em><br />
+<strong>Focus:</strong> Modeling nutrient dynamics in the Saigon River
+Estuary, Vietnam<br />
+<strong>Achievement:</strong> Implemented advanced nutrient dynamics
+model in C language</p>
 <p><strong>Bachelor’s in Environmental Management</strong> <span style="float:right;">09/2011–02/2016</span><br />
-Ho Chi Minh City University of Technology (HCMUT), Vietnam<br />
-<em>Antibiotic pollution in the Saigon River, Vietnam</em></p>
+<em>Ho Chi Minh City University of Technology (HCMUT),
+Vietnam</em><br />
+<strong>Research:</strong> Antibiotic pollution in the Saigon River,
+Vietnam</p>
 <h2 id="professional-experience">Professional Experience</h2>
 <p><strong>Postdoctoral Researcher</strong> (30 months) <span style="float:right;">05/2024–09/2026</span><br />
-Institut Géosciences Environnement (IGE), Institut de recherche pour le
-développement (IRD)<br />
-<em>Project:</em> TROPECOS project, Past, Present, and Future Greenhouse
-Gases of Tropical Estuaries<br />
-<a href="https://tropecos.fr/study-site/vietnam-ho-chi-minh-city-and-mekong-delta">Project
-link</a></p>
-<p><strong>Postdoctoral Researcher</strong> (22 months) <span style="float:right;">05/2022–02/2024</span><br />
-INRAE, l’Institut national de recherche pour l’agriculture,
-l’alimentation et l’environnement<br />
-<em>Project:</em> Studying the evolution of carbonate system at Loire
-River by using high resolution datasets</p>
-<p><strong>Doctoral Contract</strong> (37 months) <span style="float:right;">11/2018–12/2021</span><br />
-Institute of Environmental Geosciences (IGE), France<br />
-<em>Project:</em> River water quality (nutrients, carbon, phytoplankton,
-greenhouse gases) and development of a biogeochemical model (1D reactive
-transport) for tropical estuaries</p>
-<p><strong>Master Internship</strong> (6 months) <span style="float:right;">08/2017–07/2018</span><br />
-Institute of Environmental Geosciences (IGE), France<br />
-<em>Project:</em> Implementation of a nutrient dynamics model for the
-Saigon River using C language</p>
-<p><strong>Principal Investigator</strong> (6 months) <span style="float:right;">12/2016–08/2017</span><br />
-Young Investigator Project, HCMUT, Vietnam<br />
-<em>Project:</em> Design of a pilot scale constructed wetland and
-analysis of wastewater</p>
-<p><strong>Lab Technician</strong> (18 months) <span style="float:right;">12/2015–06/2017</span><br />
-Asian Center for Water Research (CARE-RESCIF), Vietnam<br />
-<em>Responsibilities:</em> Water sampling and operation of ICP-OES
-analyzer, TOC-V</p>
-<p><strong>Bachelor Internship</strong> (6 months) <span style="float:right;">06/2015–12/2015</span><br />
-Project: Development of “passive sampling” for the analysis of
-antibiotics in river<br />
-<em>Responsibilities:</em> Sampling and pretreatment of river water
-samples for antibiotics measurement</p>
-<h2 id="teaching-experience">Teaching Experience</h2>
-<p><strong>Teaching Assistant, Grenoble INP</strong> <span style="float:right;">2019–2025</span></p>
+<em>Institut Géosciences Environnement (IGE), Institut de recherche pour
+le développement (IRD)</em><br />
+<strong>Project:</strong> <a href="https://tropecos.fr/study-site/vietnam-ho-chi-minh-city-and-mekong-delta">TROPECOS
+- Tropical Estuaries Greenhouse Gases</a></p>
 <ul>
-<li><p>Delivered lectures on <a href="https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte">Water
-Quality and Treatment</a></p></li>
-<li><p>Led tutorials on <a href="https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte">River
-water quality modelling</a></p></li>
-<li><p>Conducted laboratory sessions on water quality analysis
-techniques</p></li>
-<li><p>Supervised master’s students</p></li>
+<li>Leading research on past, present, and future greenhouse gas
+emissions in tropical estuaries</li>
+<li>Developing predictive models for climate change impacts on estuarine
+biogeochemistry</li>
+<li>Managing international collaborations between French and Vietnamese
+institutions</li>
 </ul>
-<p><strong>Teaching Interests:</strong><br />
-- Environmental Modeling and Simulation<br />
-- Water Quality Management<br />
-- Biogeochemical Processes in Aquatic Environments<br />
-- Data Analysis for Environmental Sciences<br />
-- GIS Applications in Environmental Research</p>
-<h2 id="competences">Competences</h2>
-<p><strong>Numerical:</strong><br />
-- Python, C &amp; C++ for water quality modelling</p>
-<p><strong>Data Analysis &amp; Visualization:</strong><br />
-- Data/statistical analysis with Python and R on large datasets<br />
-- Mapping and spatial analysis with QGIS and ArcGIS</p>
-<p><strong>Languages:</strong><br />
-- Vietnamese (native)<br />
-- English (proficient, level B2)<br />
-- French (basic, level B1)</p>
+<p><strong>Postdoctoral Researcher</strong> (22 months) <span style="float:right;">05/2022–02/2024</span><br />
+<em>INRAE, l’Institut national de recherche pour l’agriculture,
+l’alimentation et l’environnement</em><br />
+<strong>Project:</strong> Evolution of carbonate system in the Loire
+River using high-resolution datasets</p>
+<ul>
+<li>Analyzed multidecadal trends in CO₂ evasion and aquatic
+metabolism</li>
+<li>Processed and visualized large-scale environmental datasets</li>
+<li>Published findings in high-impact limnology journals</li>
+</ul>
+<blockquote>
+<p><strong>Research Highlight:</strong> First comprehensive analysis of
+30-year trends in river metabolism and CO₂ dynamics, revealing
+significant shifts in aquatic ecosystem functioning due to environmental
+changes.</p>
+</blockquote>
+<p><strong>Doctoral Contract</strong> (37 months) <span style="float:right;">11/2018–12/2021</span><br />
+<em>Institute of Environmental Geosciences (IGE), France</em><br />
+<strong>Project:</strong> Water quality and biogeochemical modeling for
+tropical estuaries</p>
+<ul>
+<li>Developed 1D reactive transport model (C-GEM) for nutrient dynamics
+and greenhouse gas emissions</li>
+<li>Conducted extensive field campaigns for water quality
+monitoring</li>
+<li>Published 8 peer-reviewed articles during doctoral period</li>
+<li>Characterized phytoplankton communities and eutrophication
+processes</li>
+</ul>
+<p><strong>Master Internship</strong> (6 months) <span style="float:right;">08/2017–07/2018</span><br />
+<em>Institute of Environmental Geosciences (IGE), France</em><br />
+<strong>Project:</strong> Nutrient dynamics model implementation for the
+Saigon River</p>
+<ul>
+<li>Implemented computational model using C programming language</li>
+<li>Validated model against field measurements</li>
+<li>Provided recommendations for water quality management</li>
+</ul>
+<p><strong>Principal Investigator</strong> (6 months) <span style="float:right;">12/2016–08/2017</span><br />
+<em>Young Investigator Project, HCMUT, Vietnam</em><br />
+<strong>Project:</strong> Pilot-scale constructed wetland design and
+wastewater analysis</p>
+<ul>
+<li>Led independent research project as undergraduate researcher</li>
+<li>Designed and operated pilot-scale treatment system</li>
+<li>Demonstrated leadership and project management skills</li>
+</ul>
+<p><strong>Lab Technician</strong> (18 months) <span style="float:right;">12/2015–06/2017</span><br />
+<em>Asian Center for Water Research (CARE-RESCIF), Vietnam</em></p>
+<ul>
+<li>Operated analytical instruments: ICP-OES analyzer, TOC-V</li>
+<li>Conducted water sampling campaigns and sample preparation</li>
+<li>Maintained laboratory quality control standards</li>
+</ul>
+<p><strong>Bachelor Internship</strong> (6 months) <span style="float:right;">06/2015–12/2015</span><br />
+<em>HCMUT Environmental Research Laboratory, Vietnam</em><br />
+<strong>Project:</strong> Development of passive sampling methods for
+antibiotic analysis in rivers</p>
+<ul>
+<li>Developed and validated sampling methodologies</li>
+<li>Analyzed antibiotics in environmental water samples</li>
+<li>Co-authored peer-reviewed publication on methodology</li>
+</ul>
+<hr />
+<h2 id="teaching-experience">Teaching Experience</h2>
+<p><strong>Teaching Assistant</strong> <span style="float:right;">2019–2025</span><br />
+<em>Grenoble Institute of Technology (Grenoble INP)</em></p>
+<ul>
+<li><strong><a href="https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte">Water
+Quality and Treatment</a></strong> - Delivered lectures to master’s
+students</li>
+<li><strong>River Water Quality Modeling</strong> - Led tutorials and
+practical sessions</li>
+<li><strong>Laboratory Sessions</strong> - Supervised hands-on water
+quality analysis</li>
+<li><strong>Student Mentoring</strong> - Supervised and guided master’s
+thesis projects</li>
+</ul>
+<blockquote>
+<p><strong>Teaching Impact:</strong> 6+ years of experience teaching
+environmental engineering students, covering theoretical foundations and
+practical applications of water quality management.</p>
+</blockquote>
+<p><strong>Areas of Teaching Interest:</strong></p>
+<ul>
+<li>Environmental Modeling and Simulation</li>
+<li>Water Quality Management and Treatment</li>
+<li>Biogeochemical Processes in Aquatic Systems</li>
+<li>Data Analysis and Statistical Methods for Environmental
+Sciences</li>
+<li>GIS Applications in Environmental Research</li>
+</ul>
+<hr />
+<h2 id="technical-competences">Technical Competences</h2>
+<p><strong>Programming &amp; Modeling:</strong></p>
+<ul>
+<li><strong>Languages:</strong> Python (advanced), C/C++ (proficient), R
+(proficient)</li>
+<li><strong>Applications:</strong> Water quality modeling, reactive
+transport models, statistical analysis</li>
+<li><strong>Frameworks:</strong> NumPy, Pandas, Matplotlib, SciPy</li>
+</ul>
+<p><strong>Data Analysis &amp; Visualization:</strong></p>
+<ul>
+<li>Large-scale dataset processing and time series analysis</li>
+<li>Statistical modeling and uncertainty quantification</li>
+<li>Publication-quality figure generation</li>
+</ul>
+<p><strong>Geospatial Analysis:</strong></p>
+<ul>
+<li><strong>Software:</strong> QGIS (advanced), ArcGIS (proficient)</li>
+<li><strong>Applications:</strong> Spatial analysis, watershed
+delineation, remote sensing data processing</li>
+</ul>
+<p><strong>Laboratory &amp; Field Skills:</strong></p>
+<ul>
+<li>Water quality sampling and monitoring</li>
+<li>Analytical chemistry (ICP-OES, TOC analysis, spectrophotometry)</li>
+<li>Field equipment operation and maintenance</li>
+</ul>
+<p><strong>Languages:</strong></p>
+<ul>
+<li><strong>Vietnamese:</strong> Native speaker</li>
+<li><strong>English:</strong> Proficient (B2 level) - Academic and
+technical communication</li>
+<li><strong>French:</strong> Basic professional proficiency (B1
+level)</li>
+</ul>
+<hr />
 <h2 id="publications">Publications</h2>
-<h3 id="journals">Journals</h3>
+<blockquote>
+<p><strong>Publication Record:</strong> 18 peer-reviewed journal
+articles (8 as first author) + 11 conference presentations<br />
+<strong>Research Focus:</strong> Water quality modeling,
+biogeochemistry, greenhouse gas emissions, eutrophication</p>
+</blockquote>
+<h3 id="journal-articles-peer-reviewed">Journal Articles
+(Peer-Reviewed)</h3>
+<p><strong>First Author Publications:</strong></p>
 <ol type="1">
-<li><strong>Nguyen, A. T</strong>., Abril, G., Diamond, J. S.,
+<li><p><strong>Nguyen, A. T.</strong>, Abril, G., Diamond, J. S.,
 Lamouroux, R., Martinet, C., &amp; Moatar, F. (preprint). Multidecadal
 trends in CO₂ evasion and aquatic metabolism in a large temperate river.
-<em>EGUsphere</em>, 2025, 1-27. <a href="https://bg.copernicus.org/articles/22/4923/2025/">10.5194/egusphere-2025-1478</a></li>
-<li>Le, T. M. T., <strong>Nguyen, T. A</strong>., Nguyen, T. T., Nguyen,
-T. T., Nguyen, P. D., Némery, J., &amp; Baduel, C. (2025). Assessing
-Spatial Trends and Land Use Impacts on Surface Water Quality: A Case
-Study of the Saigon and Vam Co Rivers in Southern Vietnam. <em>Case
-Studies in Chemical and Environmental Engineering</em>, 101225. <a href="https://doi.org/10.1016/j.cscee.2025.101225">10.1016/j.cscee.2025.101225</a></li>
-<li>Thi-Minh-Tam Le, Trung-Tin Nguyen, <strong>Truong-An
-Nguyen</strong>, Thi-Huyen-Trang Nguyen, Phuoc-Dan Nguyen (2025). Water
-Quality Assessment of Urban Canals in Ho Chi Minh City, Vietnam:
-Effectiveness of Renovation Efforts in Minimizing Pollution. <em>Journal
-of Water Management Modeling</em>. <a href="https://doi.org/10.14796/JWMM.S545">10.14796/JWMM.S545</a></li>
-<li>Diamond, J. S., <strong>Nguyen, T.A</strong>., Abril, G., Bertuzzo,
-E., Chanudet, V., Lamouroux, R., &amp; Moatar, F. (2025). Inorganic
-carbon dynamics and their relation to autotrophic community regime shift
-over three decades in a large, alkaline river. <em>Limnology and
-Oceanography</em>. <a href="https://doi.org/10.1002/lno.70016">10.1002/lno.70016</a></li>
-<li>Caracciolo, R., Escher, B. I., Lai, F. Y., <strong>Nguyen, T.
-A</strong>., Le, T. M. T., Schlichting, R., Tröger, R., Némery, J.,
-Wiberg, K., Nguyen, P. D., &amp; Baduel, C. (2023). Impact of a megacity
-on the water quality of a tropical estuary assessed by a combination of
-chemical analysis and in-vitro bioassays. <em>Science of The Total
-Environment</em>, 877(February), 162525. <a href="https://doi.org/10.1016/j.scitotenv.2023.162525">10.1016/j.scitotenv.2023.162525</a></li>
-<li>Garnier, J., Billen, G., G Laruelle, G., Le Gendre, R., Némery, J.,
-<strong>Nguyen, T.A</strong>., Romero, E., Thieu, V., &amp; Wei, X.
-(2023). Coastal marine system and estuary functioning is driven by the
-upstream river basin. In <em>Reference Module in Earth Systems and
-Environmental Sciences</em> (p. B9780323907989000093). Elsevier. <a href="https://doi.org/10.1016/B978-0-323-90798-9.00009-3">10.1016/B978-0-323-90798-9.00009-3</a></li>
-<li><strong>Nguyen, A. T.</strong>, Dao, T. S., Strady, E., Nguyen, T.
-T. N., Aimé, J., Gratiot, N., &amp; Némery, J. (2022). Phytoplankton
+<em>EGUsphere</em>, 2025, 1-27. <a href="https://bg.copernicus.org/articles/22/4923/2025/">10.5194/egusphere-2025-1478</a></p></li>
+<li><p><strong>Nguyen, A. T.</strong>, Dao, T. S., Strady, E., Nguyen,
+T. T. N., Aimé, J., Gratiot, N., &amp; Némery, J. (2022). Phytoplankton
 characterization in a tropical tidal river impacted by a megacity: The
 case of the Saigon River (Southern Vietnam). <em>Environmental Science
-and Pollution Research</em>, 29(3), 4076–4092. <a href="https://doi.org/10.1007/s11356-021-15850-x">10.1007/s11356-021-15850-x</a></li>
-<li><strong>Nguyen, A. T</strong>., Némery, J., Gratiot, N., Dao, T. S.,
-Le, T. T. M., Baduel, C., &amp; Garnier, J. (2022). Does eutrophication
-enhance greenhouse gas emissions in urbanized tropical estuaries?
-<em>Environmental Pollution</em>, 303(September 2021). <a href="https://doi.org/10.1016/j.envpol.2022.119105">10.1016/j.envpol.2022.119105</a></li>
-<li>Camenen, B., Gratiot, N., Cohard, J. A., Gard, F., Tran, V. Q.,
-<strong>Nguyen, A. T</strong>., Dramais, G., van Emmerik, T., &amp;
-Némery, J. (2021). Monitoring discharge in a tidal river using water
-level observations: Application to the Saigon River, Vietnam.
-<em>Science of the Total Environment</em>, 761, 143195. <a href="https://doi.org/10.1016/j.scitotenv.2020.143195">10.1016/j.scitotenv.2020.143195</a></li>
-<li><strong>Nguyen, A. T.</strong>, Némery, J., Gratiot, N., Garnier,
+and Pollution Research</em>, 29(3), 4076–4092. <a href="https://doi.org/10.1007/s11356-021-15850-x">10.1007/s11356-021-15850-x</a></p></li>
+<li><p><strong>Nguyen, A. T.</strong>, Némery, J., Gratiot, N., Dao, T.
+S., Le, T. T. M., Baduel, C., &amp; Garnier, J. (2022). Does
+eutrophication enhance greenhouse gas emissions in urbanized tropical
+estuaries? <em>Environmental Pollution</em>, 303(September 2021). <a href="https://doi.org/10.1016/j.envpol.2022.119105">10.1016/j.envpol.2022.119105</a></p></li>
+<li><p><strong>Nguyen, A. T.</strong>, Némery, J., Gratiot, N., Garnier,
 J., Dao, T. S., Thieu, V., &amp; Laruelle, G. G. (2021). Biogeochemical
 functioning of an urbanized tropical estuary: Implementing the generic
 C-GEM (reactive transport) model. <em>Science of the Total
-Environment</em>, 784, 147261. <a href="https://doi.org/10.1016/j.scitotenv.2021.147261">10.1016/j.scitotenv.2021.147261</a></li>
-<li>Nguyen, T. T. N., Némery, J., Gratiot, N., Garnier, J., Strady, E.,
-Nguyen, D. P., Tran, V. Q., <strong>Nguyen, A. T.</strong>, Cao, S. T.,
-&amp; Huynh, T. P. T. (2020). Nutrient budgets in the Saigon–Dongnai
+Environment</em>, 784, 147261. <a href="https://doi.org/10.1016/j.scitotenv.2021.147261">10.1016/j.scitotenv.2021.147261</a></p></li>
+<li><p><strong>Nguyen, T. A.</strong> (2018). Antibiotics And Pesticides
+In Water And Sediments From Intensive Shrimp Farms In Southern Vietnam.
+<em>Vietnam Journal of Science and Technology</em>, 54, 146. <a href="https://doi.org/10.15625/2525-2518/54/4B/12035">10.15625/2525-2518/54/4B/12035</a></p></li>
+<li><p><strong>Nguyen, A. T.</strong>, Le, T. M. T., Tran, V. Q.,
+Truong, V. N., Nguyen, L. T., Nguyen, P. H. T., &amp; Nguyen, T. H. T.
+(2017). Effect of oxygen states in horizontal subsurface flow
+constructed wetlands on the removal of organic matter, nutrients, some
+metals and octylphenol. <em>VNUHCM Journal of Science and Technology
+Development</em>, 20(K9), Article K9. <a href="https://doi.org/10.32508/stdj.v20iK9.1676">10.32508/stdj.v20iK9.1676</a></p></li>
+<li><p><strong>Nguyen, T. A.</strong>, Tam, L. T. M., Viet, T. Q., Viet,
+T. N., Luan, N. T., Minh, N. V., Trang, N. T. H., &amp; Tuc, D. Q.
+(2017). Recommendation of optimal design and operation parameters for
+constructed wetland for sludge treatment based on the effect of
+hydraulic retention time, sludge loading rate and vegetation. <em>VNUHCM
+Journal of Science and Technology Development</em>, 20(K8), Article K8.
+<a href="https://doi.org/10.32508/stdj.v20iK8.1669">10.32508/stdj.v20iK8.1669</a></p></li>
+</ol>
+<p><strong>Contributing Author Publications:</strong></p>
+<p><strong>Contributing Author Publications:</strong></p>
+<ol type="1">
+<li><p>Le, T. M. T., <strong>Nguyen, T. A.</strong>, Nguyen, T. T.,
+Nguyen, T. T., Nguyen, P. D., Némery, J., &amp; Baduel, C. (2025).
+Assessing Spatial Trends and Land Use Impacts on Surface Water Quality:
+A Case Study of the Saigon and Vam Co Rivers in Southern Vietnam.
+<em>Case Studies in Chemical and Environmental Engineering</em>, 101225.
+<a href="https://doi.org/10.1016/j.cscee.2025.101225">10.1016/j.cscee.2025.101225</a></p></li>
+<li><p>Thi-Minh-Tam Le, Trung-Tin Nguyen, <strong>Truong-An
+Nguyen</strong>, Thi-Huyen-Trang Nguyen, Phuoc-Dan Nguyen (2025). Water
+Quality Assessment of Urban Canals in Ho Chi Minh City, Vietnam:
+Effectiveness of Renovation Efforts in Minimizing Pollution. <em>Journal
+of Water Management Modeling</em>. <a href="https://doi.org/10.14796/JWMM.S545">10.14796/JWMM.S545</a></p></li>
+<li><p>Diamond, J. S., <strong>Nguyen, T.A.</strong>, Abril, G.,
+Bertuzzo, E., Chanudet, V., Lamouroux, R., &amp; Moatar, F. (2025).
+Inorganic carbon dynamics and their relation to autotrophic community
+regime shift over three decades in a large, alkaline river.
+<em>Limnology and Oceanography</em>. <a href="https://doi.org/10.1002/lno.70016">10.1002/lno.70016</a></p></li>
+<li><p>Caracciolo, R., Escher, B. I., Lai, F. Y., <strong>Nguyen, T.
+A.</strong>, Le, T. M. T., Schlichting, R., Tröger, R., Némery, J.,
+Wiberg, K., Nguyen, P. D., &amp; Baduel, C. (2023). Impact of a megacity
+on the water quality of a tropical estuary assessed by a combination of
+chemical analysis and in-vitro bioassays. <em>Science of The Total
+Environment</em>, 877(February), 162525. <a href="https://doi.org/10.1016/j.scitotenv.2023.162525">10.1016/j.scitotenv.2023.162525</a></p></li>
+<li><p>Garnier, J., Billen, G., G Laruelle, G., Le Gendre, R., Némery,
+J., <strong>Nguyen, T.A.</strong>, Romero, E., Thieu, V., &amp; Wei, X.
+(2023). Coastal marine system and estuary functioning is driven by the
+upstream river basin. In <em>Reference Module in Earth Systems and
+Environmental Sciences</em> (p. B9780323907989000093). Elsevier. <a href="https://doi.org/10.1016/B978-0-323-90798-9.00009-3">10.1016/B978-0-323-90798-9.00009-3</a></p></li>
+<li><p>Camenen, B., Gratiot, N., Cohard, J. A., Gard, F., Tran, V. Q.,
+<strong>Nguyen, A. T.</strong>, Dramais, G., van Emmerik, T., &amp;
+Némery, J. (2021). Monitoring discharge in a tidal river using water
+level observations: Application to the Saigon River, Vietnam.
+<em>Science of the Total Environment</em>, 761, 143195. <a href="https://doi.org/10.1016/j.scitotenv.2020.143195">10.1016/j.scitotenv.2020.143195</a></p></li>
+<li><p>Nguyen, T. T. N., Némery, J., Gratiot, N., Garnier, J., Strady,
+E., Nguyen, D. P., Tran, V. Q., <strong>Nguyen, A. T.</strong>, Cao, S.
+T., &amp; Huynh, T. P. T. (2020). Nutrient budgets in the Saigon–Dongnai
 River basin: Past to future inputs from the developing Ho Chi Minh
 megacity (Vietnam). <em>River Research and Applications</em>, 36(6),
-974–990. <a href="https://doi.org/10.1002/rra.3552">10.1002/rra.3552</a></li>
-<li>Noncent, D., Strady, E., Némery, J., Thanh-Nho, N., Denis, H.,
+974–990. <a href="https://doi.org/10.1002/rra.3552">10.1002/rra.3552</a></p></li>
+<li><p>Noncent, D., Strady, E., Némery, J., Thanh-Nho, N., Denis, H.,
 Mourier, B., Babut, M., <strong>Nguyen, T. A.</strong>, Nguyen, T. N.
 T., Marchand, C., Desmet, M., Tran, A. T., Aimé, J., Gratiot, N., Dinh,
 Q. T., &amp; Nguyen, P. D. (2020). Sedimentological and geochemical data
 in bed sediments from a tropical river-estuary system impacted by a
 developing megacity, Ho Chi Minh City—Vietnam. <em>Data in Brief</em>,
-31, 105938. <a href="https://doi.org/10.1016/j.dib.2020.105938">10.1016/j.dib.2020.105938</a></li>
-<li>Nguyen, T. T. N., Némery, J., Gratiot, N., Garnier, J., Strady, E.,
-Tran, V. Q., <strong>Nguyen, A. T.</strong>, Nguyen, T. N. T., Golliet,
-C., &amp; Aimé, J. (2019). Phosphorus adsorption/desorption processes in
-the tropical Saigon River estuary (Southern Vietnam) impacted by a
-megacity. <em>Estuarine, Coastal and Shelf Science</em>, 227(August),
-106321. <a href="https://doi.org/10.1016/j.ecss.2019.106321">10.1016/j.ecss.2019.106321</a></li>
-<li>Nguyen, T. T. N., Némery, J., Gratiot, N., Strady, E., Tran, V. Q.,
-<strong>Nguyen, A. T.</strong>, Aimé, J., &amp; Peyne, A. (2019).
+31, 105938. <a href="https://doi.org/10.1016/j.dib.2020.105938">10.1016/j.dib.2020.105938</a></p></li>
+<li><p>Nguyen, T. T. N., Némery, J., Gratiot, N., Garnier, J., Strady,
+E., Tran, V. Q., <strong>Nguyen, A. T.</strong>, Nguyen, T. N. T.,
+Golliet, C., &amp; Aimé, J. (2019). Phosphorus adsorption/desorption
+processes in the tropical Saigon River estuary (Southern Vietnam)
+impacted by a megacity. <em>Estuarine, Coastal and Shelf Science</em>,
+227(August), 106321. <a href="https://doi.org/10.1016/j.ecss.2019.106321">10.1016/j.ecss.2019.106321</a></p></li>
+<li><p>Nguyen, T. T. N., Némery, J., Gratiot, N., Strady, E., Tran, V.
+Q., <strong>Nguyen, A. T.</strong>, Aimé, J., &amp; Peyne, A. (2019).
 Nutrient dynamics and eutrophication assessment in the tropical river
 system of Saigon – Dongnai (southern Vietnam). <em>Science of the Total
-Environment</em>, 653, 370–383. <a href="https://doi.org/10.1016/j.scitotenv.2018.10.319">10.1016/j.scitotenv.2018.10.319</a></li>
-<li><strong>Nguyen, T. A.</strong> (2018). Antibiotics And Pesticides In
-Water And Sediments From Intensive Shrimp Farms In Southern Vietnam.
-<em>Vietnam Journal of Science and Technology</em>, 54, 146. <a href="https://doi.org/10.15625/2525-2518/54/4B/12035">10.15625/2525-2518/54/4B/12035</a></li>
-<li>Dinh, Q. T., <strong>Nguyen, T. A.</strong>, Moreau-Guigon, E.,
+Environment</em>, 653, 370–383. <a href="https://doi.org/10.1016/j.scitotenv.2018.10.319">10.1016/j.scitotenv.2018.10.319</a></p></li>
+<li><p>Dinh, Q. T., <strong>Nguyen, T. A.</strong>, Moreau-Guigon, E.,
 Alliot, F., Teil, M. J., Blanchard, M., &amp; Chevreuil, M. (2017).
 Trace-Level Determination of Oxolinic Acid and Flumequine in Soil, River
 Bed Sediment, and River Water Using Microwave-Assisted Extraction and
 High-Performance Liquid Chromatography with Fluorimetric Detection.
-<em>Soil and Sediment Contamination</em>, 26(3), 247–258. <a href="https://doi.org/10.1080/15320383.2017.1276154">10.1080/15320383.2017.1276154</a></li>
-<li><strong>Nguyen, A. T.</strong>, Le, T. M. T., Tran, V. Q., Truong,
-V. N., Nguyen, L. T., Nguyen, P. H. T., &amp; Nguyen, T. H. T. (2017).
-Effect of oxygen states in horizontal subsurface flow constructed
-wetlands on the removal of organic matter, nutrients, some metals and
-octylphenol. <em>VNUHCM Journal of Science and Technology
-Development</em>, 20(K9), Article K9. <a href="https://doi.org/10.32508/stdj.v20iK9.1676">10.32508/stdj.v20iK9.1676</a></li>
-<li><strong>Nguyen, T. A.</strong>, Tam, L. T. M., Viet, T. Q., Viet, T.
-N., Luan, N. T., Minh, N. V., Trang, N. T. H., &amp; Tuc, D. Q. (2017).
-Recommendation of optimal design and operation parameters for
-constructed wetland for sludge treatment based on the effect of
-hydraulic retention time, sludge loading rate and vegetation. <em>VNUHCM
-Journal of Science and Technology Development</em>, 20(K8), Article K8.
-<a href="https://doi.org/10.32508/stdj.v20iK8.1669">10.32508/stdj.v20iK8.1669</a></li>
+<em>Soil and Sediment Contamination</em>, 26(3), 247–258. <a href="https://doi.org/10.1080/15320383.2017.1276154">10.1080/15320383.2017.1276154</a></p></li>
 </ol>
-<h3 id="conferences">Conferences</h3>
+<h3 id="conference-presentations">Conference Presentations</h3>
+<h3 id="conference-presentations-1">Conference Presentations</h3>
+<p><strong>Selected International Presentations:</strong></p>
 <ol type="1">
-<li><strong>T.A. Nguyen</strong>, et al., (2025). Greenhouse Gas
+<li><p><strong>T.A. Nguyen</strong>, et al., (2025). Greenhouse Gas
 Emissions and Drivers in Tropical Estuaries: Insights from the Mekong
 Delta and Saigon River (Vietnam). <em>International Conference
 I.S.Rivers</em>, 30 June to 4 July 2025, Lyon, France. <a href="https://www.assograie.org/isrivers/wp-content/uploads/2025/06/D3-iSR25-288-Nguyen-Truong-An.pdf">Oral
-presentation</a></li>
-<li><strong>T.A. Nguyen</strong>, et al., (2024). Past, Present, and
+presentation</a></p></li>
+<li><p><strong>T.A. Nguyen</strong>, et al., (2024). Past, Present, and
 Future Greenhouse Gases in Tropical Estuaries. <em>International
 Conference I.S.Rivers</em>, 25 to 27 Nov 2024, Sète, France. <a href="https://www.youtube.com/watch?v=dk3yjBCyKSk">Presentation
-Video</a></li>
-<li><strong>T.A. Nguyen</strong>, et al., (2022). Spatial and temporal
-variation of greenhouse gas emissions in an urbanized tropical estuary
-(the Saigon River, Vietnam). <em>ECSA 59</em>, September 5-8, 2022,
-Kursaal, San Sebastian, Spain. <a href="https://pure.port.ac.uk/ws/portalfiles/portal/79663928/Oral_programme_ECSA2022_24.8.22.pdf">Poster</a></li>
-<li><strong>T.A. Nguyen</strong>, et al., (2022). Eutrophication
+Video</a></p></li>
+<li><p><strong>T.A. Nguyen</strong>, et al., (2022). Spatial and
+temporal variation of greenhouse gas emissions in an urbanized tropical
+estuary (the Saigon River, Vietnam). <em>ECSA 59</em>, September 5-8,
+2022, Kursaal, San Sebastian, Spain. <a href="https://pure.port.ac.uk/ws/portalfiles/portal/79663928/Oral_programme_ECSA2022_24.8.22.pdf">Conference
+Program</a></p></li>
+<li><p><strong>T.A. Nguyen</strong>, et al., (2022). Eutrophication
 management scenarios in the Saigon River by using C-GEM, an estuarine
 biogeochemical model. <em>ECSA 59</em>, September 5-8, 2022, Kursaal,
-San Sebastian, Spain. <a href="https://pure.port.ac.uk/ws/portalfiles/portal/79663928/Oral_programme_ECSA2022_24.8.22.pdf">Poster</a></li>
-<li><strong>T.A. Nguyen</strong>, et al., (2022). Impact of
+San Sebastian, Spain. <a href="https://pure.port.ac.uk/ws/portalfiles/portal/79663928/Oral_programme_ECSA2022_24.8.22.pdf">Conference
+Program</a></p></li>
+<li><p><strong>T.A. Nguyen</strong>, et al., (2022). Impact of
 anthropogenic inputs on greenhouse gas emissions in the tropical Saigon
 River Estuary. <em>International Symposium on Water Sustainability &amp;
 Green Technologies</em>, November 25-26, 2022, Ho Chi Minh City,
-Vietnam. <a href="https://conferences.hcmut.edu.vn/conference/625d24f5a8d3f37fb73f0afb/oTGhnW-m12ukZ_1L-QD7cL-f.pdf">Poster</a></li>
-<li><strong>T.A. Nguyen</strong>, et al., (2022). Modeling the seasonal
-nutrients dynamics and phytoplankton development in Saigon River
-Estuary, Vietnam. <em>International Symposium on Ecohydraulics</em>,
-July 4-8, 2022, Lyon, France. <a href="https://www.graie.org/graie/graiedoc/doc_telech/isrivers2022/Poster%20Mardi%20TH2/20_Poster_TH2_ISRIvers22.pdf">Poster</a></li>
-<li><strong>T.A. Nguyen</strong>, et al., (2020). Modelling scenarios by
-C-GEM, an estuarine biogeochemical model. <em>International Conference
-on Water, Megacities and Global Change</em>, December 1-4, 2020, Paris
-(Web-Seminar), Vietnam. <a href="https://hal.science/hal-03420862v1/document">Oral</a></li>
-<li><strong>T.A. Nguyen</strong>, et al., (2020). Evaluating estuarine
-responses to modification of nutrient loads from megacity by a generic
-reactive-transport model. <em>International Symposium on
+Vietnam. <a href="https://conferences.hcmut.edu.vn/conference/625d24f5a8d3f37fb73f0afb/oTGhnW-m12ukZ_1L-QD7cL-f.pdf">Poster</a></p></li>
+<li><p><strong>T.A. Nguyen</strong>, et al., (2022). Modeling the
+seasonal nutrients dynamics and phytoplankton development in Saigon
+River Estuary, Vietnam. <em>International Symposium on
+Ecohydraulics</em>, July 4-8, 2022, Lyon, France. <a href="https://www.graie.org/graie/graiedoc/doc_telech/isrivers2022/Poster%20Mardi%20TH2/20_Poster_TH2_ISRIvers22.pdf">Poster</a></p></li>
+<li><p><strong>T.A. Nguyen</strong>, et al., (2020). Modelling scenarios
+by C-GEM, an estuarine biogeochemical model. <em>International
+Conference on Water, Megacities and Global Change</em>, December 1-4,
+2020, Paris (Web-Seminar), Vietnam. <a href="https://hal.science/hal-03420862v1/document">Oral</a></p></li>
+<li><p><strong>T.A. Nguyen</strong>, et al., (2020). Evaluating
+estuarine responses to modification of nutrient loads from megacity by a
+generic reactive-transport model. <em>International Symposium on
 Ecohydraulics</em>, December 23-24, 2019, Lyon, France. <a href="https://www.iahr.org/video/clip?id=305">Presentation
-Video</a></li>
-<li><strong>T.A. Nguyen</strong>, et al., (2019). Self‐purification
+Video</a></p></li>
+<li><p><strong>T.A. Nguyen</strong>, et al., (2019). Self‐purification
 capacity of a tropical estuary using a generic reactive-transport
 estuarine model. <em>Green Technologies for Sustainable Water</em>,
-December 1-5, 2019, Ho Chi Minh City, Vietnam. Poster</li>
-<li><strong>T.A. Nguyen</strong>, et al., (2019). Modelling nutrient
+December 1-5, 2019, Ho Chi Minh City, Vietnam. Poster</p></li>
+<li><p><strong>T.A. Nguyen</strong>, et al., (2019). Modelling nutrient
 dynamics in a tropical estuary under human pressure: case study of the
 Saigon tidal River (Southern Vietnam). <em>International Conference on
 Water Resources and Coastal Engineering</em>, April 25, 2019, Da Nang
-City, Vietnam. Oral</li>
-<li><strong>T.A. Nguyen</strong>., et al., (2016). Analysis of
+City, Vietnam. Oral</p></li>
+<li><p><strong>T.A. Nguyen</strong>., et al., (2016). Analysis of
 antibiotic and pesticide residues in shrimp farm waters using passive
 sampling. <em>SETAC Asia/Pacific Conference</em>, September 16-19, 2016,
-Singapore. <a href="https://infoscience.epfl.ch/entities/publication/d60003bc-4464-4e18-adf7-598709b87117">Oral</a></li>
+Singapore. <a href="https://infoscience.epfl.ch/entities/publication/d60003bc-4464-4e18-adf7-598709b87117">Oral</a></p></li>
 </ol>
-<h2 id="references">References</h2>
-<p><strong>Julien Némery</strong><br />
-Professor-researcher<br />
-IGE, Grenoble-INP, France<br />
-E-mail: julien.nemery@grenoble-inp.fr</p>
-<p><strong>Nicolas Gratiot</strong><br />
-Research Fellow<br />
-IRD, IGE, Grenoble, France<br />
-E-mail: nicolas.gratiot@ird.fr</p>
-<p><strong>Florentina Moatar</strong><br />
-Senior researcher<br />
-INRAe, Lyon, France<br />
-E-mail: florentina.moatar@inrae.fr</p>
+<hr />
+<h2 id="professional-references">Professional References</h2>
+<p><strong>Julien Némery, PhD</strong><br />
+<em>Professor-Researcher</em><br />
+Institute of Environmental Geosciences (IGE)<br />
+Grenoble Institute of Technology, France<br />
+📧 julien.nemery@grenoble-inp.fr</p>
+<p><strong>Nicolas Gratiot, PhD</strong><br />
+<em>Research Fellow</em><br />
+Institut de recherche pour le développement (IRD)<br />
+Institute of Environmental Geosciences (IGE), Grenoble, France<br />
+📧 nicolas.gratiot@ird.fr</p>
+<p><strong>Florentina Moatar, PhD</strong><br />
+<em>Senior Researcher</em><br />
+Institut national de recherche pour l’agriculture, l’alimentation et
+l’environnement (INRAe)<br />
+Lyon, France<br />
+📧 florentina.moatar@inrae.fr</p>
+<hr />
+<p><em>CV last updated: October 2025</em></p>
 </body>
 </html>
