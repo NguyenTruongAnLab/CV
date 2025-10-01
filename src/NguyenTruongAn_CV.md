@@ -41,7 +41,7 @@ Ho Chi Minh City University of Technology (HCMUT), Vietnam
 
 ## Professional Experience
 
-**Postdoctoral Researcher** (26 months) <span style="float:right;">05/2024–06/2026</span>  
+**Postdoctoral Researcher** (30 months) <span style="float:right;">05/2024–09/2026</span>  
 Institut Géosciences Environnement (IGE), Institut de recherche pour le développement (IRD)  
 *Project:* TROPECOS project, Past, Present, and Future Greenhouse Gases of Tropical Estuaries  
 [Project link](https://tropecos.fr/study-site/vietnam-ho-chi-minh-city-and-mekong-delta)
@@ -109,7 +109,7 @@ Project: Development of "passive sampling" for the analysis of antibiotics in ri
 
 ### Journals
 
-1. **Nguyen, A. T**., Abril, G., Diamond, J. S., Lamouroux, R., Martinet, C., & Moatar, F. (preprint). Multidecadal trends in CO₂ evasion and aquatic metabolism in a large temperate river. *EGUsphere*, 2025, 1-27. [10.5194/egusphere-2025-1478](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-1478)
+1. **Nguyen, A. T**., Abril, G., Diamond, J. S., Lamouroux, R., Martinet, C., & Moatar, F. (preprint). Multidecadal trends in CO₂ evasion and aquatic metabolism in a large temperate river. *EGUsphere*, 2025, 1-27. [10.5194/egusphere-2025-1478](https://bg.copernicus.org/articles/22/4923/2025/)
 2. Le, T. M. T., **Nguyen, T. A**., Nguyen, T. T., Nguyen, T. T., Nguyen, P. D., Némery, J., & Baduel, C. (2025). Assessing Spatial Trends and Land Use Impacts on Surface Water Quality: A Case Study of the Saigon and Vam Co Rivers in Southern Vietnam. *Case Studies in Chemical and Environmental Engineering*, 101225. [10.1016/j.cscee.2025.101225](https://doi.org/10.1016/j.cscee.2025.101225)
 3. Thi-Minh-Tam Le, Trung-Tin Nguyen, **Truong-An Nguyen**, Thi-Huyen-Trang Nguyen, Phuoc-Dan Nguyen (2025). Water Quality Assessment of Urban Canals in Ho Chi Minh City, Vietnam: Effectiveness of Renovation Efforts in Minimizing Pollution. *Journal of Water Management Modeling*. [10.14796/JWMM.S545](https://doi.org/10.14796/JWMM.S545)
 4. Diamond, J. S., **Nguyen, T.A**., Abril, G., Bertuzzo, E., Chanudet, V., Lamouroux, R., & Moatar, F. (2025). Inorganic carbon dynamics and their relation to autotrophic community regime shift over three decades in a large, alkaline river. *Limnology and Oceanography*. [10.1002/lno.70016](https://doi.org/10.1002/lno.70016)
