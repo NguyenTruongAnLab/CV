@@ -236,6 +236,35 @@ ol li {
   padding-left: 0.3em;
 }
 
+/* Custom numbering for publications - most recent (top) = 1, oldest (bottom) = highest number */
+/* Target ordered lists that come after the Publications heading */
+#publications ~ * ol,
+#journal-articles-peer-reviewed ~ ol,
+#conference-presentations ~ ol {
+  list-style: none;
+  counter-reset: pub-counter;
+  margin-left: 2.5em;
+}
+
+#publications ~ * ol li,
+#journal-articles-peer-reviewed ~ ol li,
+#conference-presentations ~ ol li {
+  counter-increment: pub-counter;
+  position: relative;
+}
+
+#publications ~ * ol li::before,
+#journal-articles-peer-reviewed ~ ol li::before,
+#conference-presentations ~ ol li::before {
+  content: counter(pub-counter) ". ";
+  font-weight: bold;
+  color: #2c3e50;
+  position: absolute;
+  left: -2.2em;
+  width: 1.8em;
+  text-align: right;
+}
+
 /* Tables - Modern professional styling */
 table {
   width: 100%;
