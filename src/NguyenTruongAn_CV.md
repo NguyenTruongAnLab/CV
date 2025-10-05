@@ -16,7 +16,7 @@ truongan9393@yahoo.com | Phone: +33 662 04 98 13
 
 ## Professional Summary
 
-Postdoctoral researcher specializing in **water quality modeling** and **biogeochemical processes** in rivers and estuaries. Expert in developing reactive transport models to understand nutrient dynamics, eutrophication, and greenhouse gas emissions in tropical aquatic systems. Extensive international research experience across France and Vietnam.
+Postdoctoral researcher specializing in [water quality modeling](https://doi.org/10.1016/j.scitotenv.2021.147261) and [biogeochemical processes](https://doi.org/10.1016/j.envpol.2022.119105) in rivers and estuaries. Expert in developing reactive transport models to understand [nutrient dynamics, eutrophication](https://doi.org/10.1007/s11356-021-15850-x), and [greenhouse gas emissions](https://bg.copernicus.org/articles/22/4923/2025/) in [tropical aquatic systems](https://tropecos.fr/study-site/vietnam-ho-chi-minh-city-and-mekong-delta). Extensive international research experience across [France](https://www.ige-grenoble.fr/-Membres-de-l-equipe-Hydrimz-et-visiteurs-) and [Vietnam](https://carerescif.hcmut.edu.vn/en/person/nguyen-truong-an/4.htm).
 
 > **Key Expertise:** Biogeochemical Modeling • Water Quality Assessment • Greenhouse Gas Emissions • Eutrophication Management • Tropical Estuaries • Data Analysis & Scientific Programming
 
@@ -158,13 +158,13 @@ Postdoctoral researcher specializing in **water quality modeling** and **biogeoc
 
 ## Publications
 
-> **Publication Record:** 19 peer-reviewed journal articles (8 as first author) + 11 conference presentations
+> **Publication Record:** 19 peer-reviewed journal articles (8 articles as first author) + 11 conference presentations
 
 ### Journal Articles (Peer-Reviewed)
 
 **First Author Publications:**
 
-8. **Nguyen, A. T.**, Abril, G., Diamond, J. S., Lamouroux, R., Martinet, C., & Moatar, F. (preprint). Multidecadal trends in CO$_2$ evasion and aquatic metabolism in a large temperate river. *EGUsphere*, 2025, 1-27. [10.5194/egusphere-2025-1478](https://bg.copernicus.org/articles/22/4923/2025/)
+8. **Nguyen, A. T.**, Abril, G., Diamond, J. S., Lamouroux, R., Martinet, C., & Moatar, F. Multidecadal trends in CO$_2$ evasion and aquatic metabolism in a large temperate river. *EGUsphere*, 2025, 1-27. [10.5194/egusphere-2025-1478](https://bg.copernicus.org/articles/22/4923/2025/)
 
 7. **Nguyen, A. T.**, Dao, T. S., Strady, E., Nguyen, T. T. N., Aimé, J., Gratiot, N., & Némery, J. (2022). Phytoplankton characterization in a tropical tidal river impacted by a megacity: The case of the Saigon River (Southern Vietnam). *Environmental Science and Pollution Research*, 29(3), 4076–4092. [10.1007/s11356-021-15850-x](https://doi.org/10.1007/s11356-021-15850-x)
 
@@ -172,7 +172,7 @@ Postdoctoral researcher specializing in **water quality modeling** and **biogeoc
 
 5. **Nguyen, A. T.**, Némery, J., Gratiot, N., Garnier, J., Dao, T. S., Thieu, V., & Laruelle, G. G. (2021). Biogeochemical functioning of an urbanized tropical estuary: Implementing the generic C-GEM (reactive transport) model. *Science of the Total Environment*, 784, 147261. [10.1016/j.scitotenv.2021.147261](https://doi.org/10.1016/j.scitotenv.2021.147261)
 
-4. **Nguyen, A. T.**, Némery, J., Gratiot, N., Dao, T. S., Thieu, V., Garnier, J., & Laruelle, G. (2020). Evaluating the response of water quality to pollutant loading in the Saigon River system (Vietnam): modelling scenarios by C-GEM, an estuarine biogeochemical model. In Water, Megacities and Global Change conference December 2020.
+4. **Nguyen, A. T.**, Némery, J., Gratiot, N., Dao, T. S., Thieu, V., Garnier, J., & Laruelle, G. (2020). Evaluating the response of water quality to pollutant loading in the Saigon River system (Vietnam): modelling scenarios by C-GEM, an estuarine biogeochemical model. In Water, Megacities and Global Change conference December 2020. [PDF](https://hal.science/hal-03420862/document).
 
 3. **Nguyen, T. A.** (2018). Antibiotics And Pesticides In Water And Sediments From Intensive Shrimp Farms In Southern Vietnam. *Vietnam Journal of Science and Technology*, 54, 146. [10.15625/2525-2518/54/4B/12035](https://doi.org/10.15625/2525-2518/54/4B/12035)
 
