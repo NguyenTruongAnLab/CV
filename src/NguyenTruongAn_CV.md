@@ -14,7 +14,7 @@ style: default
 truongan9393@yahoo.com | Phone: +33 662 04 98 13  
 [ResearchGate](https://www.researchgate.net/profile/Truong-Nguyen-38) | [Orcid](https://orcid.org/0000-0003-2787-7534) | [GoogleScholar](https://scholar.google.com/citations?hl=en&user=wxhdH1UAAAAJ&view_op=list_works&sortby=pubdate)
 
-## Professional Summary
+## Summary
 
 Postdoctoral researcher specializing in [water quality modeling](https://doi.org/10.1016/j.scitotenv.2021.147261) and [biogeochemical processes](https://doi.org/10.1016/j.envpol.2022.119105) in rivers and estuaries. Expert in developing reactive transport models to understand [nutrient dynamics, eutrophication](https://doi.org/10.1007/s11356-021-15850-x), and [greenhouse gas emissions](https://bg.copernicus.org/articles/22/4923/2025/) in [tropical aquatic systems](https://tropecos.fr/study-site/vietnam-ho-chi-minh-city-and-mekong-delta). Extensive international research experience across [France](https://www.ige-grenoble.fr/-Membres-de-l-equipe-Hydrimz-et-visiteurs-) and [Vietnam](https://carerescif.hcmut.edu.vn/en/person/nguyen-truong-an/4.htm).
 
@@ -33,17 +33,15 @@ Postdoctoral researcher specializing in [water quality modeling](https://doi.org
 
 **PhD in Environmental Science** <span style="float:right;">11/2018–12/2021</span>  
 *University of Grenoble Alpes (UGA), France*  
-**Thesis:** Biogeochemical modeling in a tropical estuary and eutrophication management  
-**Achievement:** Developed C-GEM reactive transport model for tropical estuaries
+**Thesis:** [Biogeochemical modeling in a tropical estuary and eutrophication management](https://www.researchgate.net/publication/359481142_Modeling_of_nutrient_dynamics_in_an_urbanized_tropical_estuary_and_application_to_eutrophication_risk_management)
 
 **Master's in Hydraulics** <span style="float:right;">09/2017–08/2018</span>  
 *Grenoble Institute of Technology (Grenoble INP), France*  
-**Focus:** Modeling nutrient dynamics in the Saigon River Estuary, Vietnam  
-**Achievement:** Implemented advanced nutrient dynamics model in C language
+**Thesis:** [Modeling nutrient dynamics in the Saigon River Estuary, Vietnam](https://www.researchgate.net/publication/331166855_Modeling_nutrients_dynamics_in_the_tidal_estuarine_system_A_case_study_in_Saigon_River_Vietnam) 
 
 **Bachelor's in Environmental Management** <span style="float:right;">09/2011–02/2016</span>  
 *Ho Chi Minh City University of Technology (HCMUT), Vietnam*  
-**Research:** Antibiotic pollution in the Saigon River, Vietnam
+**Thesis:** [Antibiotic pollution in the Saigon River, Vietnam](https://www.researchgate.net/publication/393775307_Assessment_of_the_current_status_of_antibiotic_pollution_in_the_surface_water_environment_of_the_Saigon_-_Dong_Nai_River)
 
 
 ## Professional Experience
@@ -107,15 +105,18 @@ Postdoctoral researcher specializing in [water quality modeling](https://doi.org
 
 ## Teaching Experience
 
+> **Teaching record:** 6+ years of experience teaching environmental engineering students, covering theoretical foundations and practical applications of water quality management.
+
 **Teaching Assistant** <span style="float:right;">2019–2025</span>  
 *Grenoble Institute of Technology (Grenoble INP)*
 
-**[Water Quality and Treatment](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte)** - Delivered lectures to master's students:
-- **River Water Quality Modeling** - Practical sessions for Seine water quality modelling
-- **Water Sampling and Laboratory** - Practical sessions for River water quality assessment
-- **Student Mentoring** - Supervised 2 students (Grenoble INP), 1 student (HCMUT) as master 1 level
+**[Water Quality and Treatment](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte)**:
 
-> **Teaching Impact:** 6+ years of experience teaching environmental engineering students, covering theoretical foundations and practical applications of water quality management.
+- **River Water Quality Modeling** - Practical sessions for Seine water quality modelling
+
+- **Water Sampling and Laboratory** - Practical sessions for River water quality assessment
+
+- **Student Mentoring** - Supervised 2 students (Grenoble INP), 1 student (HCMUT) as master 1 level
 
 **Areas of Teaching Interest:**
 
