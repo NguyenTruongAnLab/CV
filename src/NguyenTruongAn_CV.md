@@ -16,18 +16,15 @@ truongan9393@yahoo.com | Phone: +33 662 04 98 13
 
 ## Professional Summary
 
-Postdoctoral researcher specializing in **water quality modeling** and **biogeochemical processes** in rivers and estuaries. Expert in developing reactive transport models to understand nutrient dynamics, eutrophication, and greenhouse gas emissions in tropical aquatic systems. **19 peer-reviewed publications** and extensive international research experience across France and Vietnam.
+Postdoctoral researcher specializing in **water quality modeling** and **biogeochemical processes** in rivers and estuaries. Expert in developing reactive transport models to understand nutrient dynamics, eutrophication, and greenhouse gas emissions in tropical aquatic systems. Extensive international research experience across France and Vietnam.
 
 > **Key Expertise:** Biogeochemical Modeling • Water Quality Assessment • Greenhouse Gas Emissions • Eutrophication Management • Tropical Estuaries • Data Analysis & Scientific Programming
 
-
-## Research Impact & Metrics
-
 | Metric | Value |
-|--------|-------|
-| **Publications** | 18 journal articles + 11 conference presentations |
-| **Research Areas** | Water Quality, Biogeochemistry, Climate Change |
-| **Modeling Experience** | 7+ years developing and applying environmental models |
+|----|-----------|
+| **Publications** | 19 journal articles + 11 conference presentations |
+| **Research Areas** | Modelling, Water Quality, Biogeochemistry, Climate Change |
+| **Experience** | 7+ years developing environmental models, 6+ years teaching at Grenoble INP |
 | **Languages** | Vietnamese (native), English (B2), French (B1) |
 | **Programming** | Python, C/C++, R, QGIS, ArcGIS |
 
@@ -64,11 +61,11 @@ Postdoctoral researcher specializing in **water quality modeling** and **biogeoc
 *INRAE, l'Institut national de recherche pour l'agriculture, l'alimentation et l'environnement*  
 **Project:** Evolution of carbonate system in the Loire River using high-resolution datasets
 
-- Analyzed multidecadal trends in CO₂ evasion and aquatic metabolism
+- Analyzed multidecadal trends in CO$_2$ evasion and aquatic metabolism
 - Training modelling and large dataset processing for EDF staff
-- Published 2 peer-reviewed articles ((1 article as first author))
+- Published 2 peer-reviewed articles (1 article as first author)
 
-> **Research Highlight:** First comprehensive analysis of 30-year trends in river metabolism and CO₂ dynamics, revealing significant shifts in aquatic ecosystem functioning due to environmental changes.
+> **Research Highlight:** First comprehensive analysis of 30-year trends in river metabolism and CO$_2$ dynamics, revealing significant shifts in aquatic ecosystem functioning due to environmental changes.
 
 **Doctoral Contract** (37 months) <span style="float:right;">11/2018–12/2021</span>  
 *Institute of Environmental Geosciences (IGE), France*  
@@ -113,7 +110,7 @@ Postdoctoral researcher specializing in **water quality modeling** and **biogeoc
 **Teaching Assistant** <span style="float:right;">2019–2025</span>  
 *Grenoble Institute of Technology (Grenoble INP)*
 
-- **[Water Quality and Treatment](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte)** - Delivered lectures to master's students
+**[Water Quality and Treatment](https://ense3.grenoble-inp.fr/en/study-at-ense3/water-quality-and-treatment-5eus5qte)** - Delivered lectures to master's students:
 - **River Water Quality Modeling** - Practical sessions for Seine water quality modelling
 - **Water Sampling and Laboratory** - Practical sessions for River water quality assessment
 - **Student Mentoring** - Supervised 2 students (Grenoble INP), 1 student (HCMUT) as master 1 level
@@ -167,7 +164,7 @@ Postdoctoral researcher specializing in **water quality modeling** and **biogeoc
 
 **First Author Publications:**
 
-8. **Nguyen, A. T.**, Abril, G., Diamond, J. S., Lamouroux, R., Martinet, C., & Moatar, F. (preprint). Multidecadal trends in CO₂ evasion and aquatic metabolism in a large temperate river. *EGUsphere*, 2025, 1-27. [10.5194/egusphere-2025-1478](https://bg.copernicus.org/articles/22/4923/2025/)
+8. **Nguyen, A. T.**, Abril, G., Diamond, J. S., Lamouroux, R., Martinet, C., & Moatar, F. (preprint). Multidecadal trends in CO$_2$ evasion and aquatic metabolism in a large temperate river. *EGUsphere*, 2025, 1-27. [10.5194/egusphere-2025-1478](https://bg.copernicus.org/articles/22/4923/2025/)
 
 7. **Nguyen, A. T.**, Dao, T. S., Strady, E., Nguyen, T. T. N., Aimé, J., Gratiot, N., & Némery, J. (2022). Phytoplankton characterization in a tropical tidal river impacted by a megacity: The case of the Saigon River (Southern Vietnam). *Environmental Science and Pollution Research*, 29(3), 4076–4092. [10.1007/s11356-021-15850-x](https://doi.org/10.1007/s11356-021-15850-x)
 
