@@ -11,7 +11,7 @@ style: default
 
 **Environmental Scientist | Water Quality Modeling | Biogeochemistry Researcher**
 
-truongan9393@yahoo.com | Phone: +33 662 04 98 13  
+truong-an.nguyen@univ-grenoble-alpes.fr | Phone: +33 662 04 98 13  
 [ResearchGate](https://www.researchgate.net/profile/Truong-Nguyen-38) | [Orcid](https://orcid.org/0000-0003-2787-7534) | [GoogleScholar](https://scholar.google.com/citations?hl=en&user=wxhdH1UAAAAJ&view_op=list_works&sortby=pubdate)
 
 ## Summary
