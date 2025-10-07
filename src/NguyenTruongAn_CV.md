@@ -254,8 +254,8 @@ Institute of Environmental Geosciences (IGE), Grenoble, France
 **Nguyen Phuoc Dan, PhD**  
 *Professor-Researcher*  
 Centre for Asian Research on WatEr (CARE)
-Faculty of Civil Engineering 
-Ho Chi Minh City University of Technology, Vietnam  
+Faculty of Civil Engineering,
+Ho Chi Minh City University of Technology, Vietnam
 📧 npdan@hcmut.edu.vn
 
 ---
