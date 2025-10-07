@@ -9,7 +9,7 @@ mainfont: "DejaVu Sans"
 style: default
 ---
 
-**Environmental Scientist | Water Quality Modeling | Biogeochemistry Researcher**
+**Environmental Scientist | Water Quality Modeler | Biogeochemistry Researcher**
 
 truong-an.nguyen@univ-grenoble-alpes.fr | Phone: +33 662 04 98 13  
 [ResearchGate](https://www.researchgate.net/profile/Truong-Nguyen-38) | [Orcid](https://orcid.org/0000-0003-2787-7534) | [GoogleScholar](https://scholar.google.com/citations?hl=en&user=wxhdH1UAAAAJ&view_op=list_works&sortby=pubdate)
@@ -22,11 +22,11 @@ Postdoctoral researcher specializing in [water quality modeling](https://doi.org
 
 | Metric | Value |
 |----|-----------|
-| **Publications** | 19 journal articles + 11 conference presentations |
-| **Research Areas** | Modelling, Water Quality, Biogeochemistry, Climate Change |
+| **Publications** | 19 peer-reviewed journal articles + 11 international conference presentations |
+| **Research Areas** | Modelling, Water Quality, Greenhouse gases, Climate Change |
 | **Experience** | 7+ years developing environmental models, 6+ years teaching at Grenoble INP |
-| **Languages** | Vietnamese (native), English (B2), French (B1) |
-| **Programming** | Python, C/C++, R, QGIS, ArcGIS |
+| **Languages** | Vietnamese (native), English (advanced), French (proficient) |
+| **Programming** | Python, C/C++, R, QGIS, ArcGIS, Delft3D, Telemac, HEC-RAS |
 
 
 ## Education
