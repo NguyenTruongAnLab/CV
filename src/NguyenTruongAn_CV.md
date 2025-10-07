@@ -120,7 +120,7 @@ Postdoctoral researcher specializing in [water quality modeling](https://doi.org
 
 - **Water Sampling and Laboratory** - Practical sessions for River water quality assessment
 
-- **Student Mentoring** - Supervised 2 students (Grenoble INP), 1 student (HCMUT) as master 1 level
+- **Student Mentoring** - Supervised 3 Master's students (2 Grenoble INP, 1 HCMUT)
 
 **Areas of Teaching Interest:**
 
@@ -136,6 +136,8 @@ Postdoctoral researcher specializing in [water quality modeling](https://doi.org
 **Programming & Modeling:**
 
 - **Languages:** Python (advanced), C/C++ (proficient), R (proficient)
+- **Model Development**: C-GEM (C/Python), QUAL-NET (C++), Python-based instructional models.
+- **Hydrodynamic Software::** Proficient in Telemac, Delft3D, HEC-RAS
 - **Applications:** Water quality modeling, reactive transport models, statistical analysis
 
 **Data Analysis & Visualization:**
@@ -152,7 +154,7 @@ Postdoctoral researcher specializing in [water quality modeling](https://doi.org
 **Laboratory & Field Skills:**
 
 - Water quality sampling and monitoring
-- Analytical chemistry (ICP-OES, TOC analysis, spectrophotometry)
+- Analytical chemistry (ICP-OES, TOC-V, spectrophotometry)
 - Field equipment operation and maintenance
 
 **Languages:**
