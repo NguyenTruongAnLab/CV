@@ -55,6 +55,8 @@ Postdoctoral researcher specializing in [water quality modeling](https://doi.org
 - Managing international collaborations between French and Vietnamese institutions
 - Planning to publish 4 peer-reviewed articles as first author
 
+> **Research Highlight:** Reconstructed 30-year Water quality evolution using Sentinel-2 water quality products, JAXA land-use time series (1990-2020), and C-GEM predictive modeling—quantifying urbanization impacts on Mekong Delta carbon dynamics from past to future
+
 **Postdoctoral Researcher** (22 months) <span style="float:right;">05/2022–02/2024</span>  
 *INRAE, l'Institut national de recherche pour l'agriculture, l'alimentation et l'environnement*  
 **Project:** Evolution of carbonate system in the Loire River using high-resolution datasets
@@ -63,7 +65,7 @@ Postdoctoral researcher specializing in [water quality modeling](https://doi.org
 - Training modelling and large dataset processing for EDF staff
 - Published 2 peer-reviewed articles (1 article as first author)
 
-> **Research Highlight:** First comprehensive analysis of 30-year trends in river metabolism and CO$_2$ dynamics, revealing significant shifts in aquatic ecosystem functioning due to environmental changes.
+> **Research Highlight:** Automated data pipeline to collect nationwide French data; processed 280,000+ hourly measurements; applied CO2SYS for carbonate system calculations and StreamMetabolizer Bayesian inverse modeling of aquatic metabolism—revealing 32-year regime shift and 10-fold CO$_2$ emission variability
 
 **Doctoral Contract** (37 months) <span style="float:right;">11/2018–12/2021</span>  
 *Institute of Environmental Geosciences (IGE), France*  
@@ -72,6 +74,8 @@ Postdoctoral researcher specializing in [water quality modeling](https://doi.org
 - Developed 1D reactive transport model (C-GEM) for nutrient dynamics and greenhouse gas emissions
 - Conducted extensive field campaigns for water quality monitoring
 - Published 8 peer-reviewed articles during doctoral period (3 articles as first author)
+
+> **Research Highlight:** Pioneered the application and calibration of the C-GEM reactive transport model for tropical conditions; creating a predictive tool to assess eutrophication risks and greenhouse gas emissions in a complex, urbanized tropical estuary
 
 **Master Internship** (6 months) <span style="float:right;">08/2017–07/2018</span>  
 *Institute of Environmental Geosciences (IGE), France*  
@@ -165,7 +169,7 @@ Postdoctoral researcher specializing in [water quality modeling](https://doi.org
 
 **First Author Publications:**
 
-8. **Nguyen, A. T.**, Abril, G., Diamond, J. S., Lamouroux, R., Martinet, C., & Moatar, F. Multidecadal trends in CO$_2$ evasion and aquatic metabolism in a large temperate river. *EGUsphere*, 2025, 1-27. [10.5194/egusphere-2025-1478](https://bg.copernicus.org/articles/22/4923/2025/)
+8. **Nguyen, A. T.**, Abril, G., Diamond, J. S., Lamouroux, R., Martinet, C., & Moatar, F (2025). Multidecadal trends in CO$_2$ evasion and aquatic metabolism in a large temperate river. *Biogeosciences *, 22(18), pp.4923-4951. [10.5194/bg-22-4923-2025](https://bg.copernicus.org/articles/22/4923/2025/)
 
 7. **Nguyen, A. T.**, Dao, T. S., Strady, E., Nguyen, T. T. N., Aimé, J., Gratiot, N., & Némery, J. (2022). Phytoplankton characterization in a tropical tidal river impacted by a megacity: The case of the Saigon River (Southern Vietnam). *Environmental Science and Pollution Research*, 29(3), 4076–4092. [10.1007/s11356-021-15850-x](https://doi.org/10.1007/s11356-021-15850-x)
 
@@ -205,9 +209,7 @@ Postdoctoral researcher specializing in [water quality modeling](https://doi.org
 
 1. Dinh, Q. T., **Nguyen, T. A.**, Moreau-Guigon, E., Alliot, F., Teil, M. J., Blanchard, M., & Chevreuil, M. (2017). Trace-Level Determination of Oxolinic Acid and Flumequine in Soil, River Bed Sediment, and River Water Using Microwave-Assisted Extraction and High-Performance Liquid Chromatography with Fluorimetric Detection. *Soil and Sediment Contamination*, 26(3), 247–258. [10.1080/15320383.2017.1276154](https://doi.org/10.1080/15320383.2017.1276154)
 
-### Conference Presentations
-
-**Selected International Presentations:**
+### Selected International Presentations
 
 11. **T.A. Nguyen**, et al., (2025). Greenhouse Gas Emissions and Drivers in Tropical Estuaries: Insights from the Mekong Delta and Saigon River (Vietnam). *International Conference I.S.Rivers*, 30 June to 4 July 2025, Lyon, France. [Oral presentation](https://www.assograie.org/isrivers/wp-content/uploads/2025/06/D3-iSR25-288-Nguyen-Truong-An.pdf)
 
@@ -247,11 +249,12 @@ Institut de recherche pour le développement (IRD)
 Institute of Environmental Geosciences (IGE), Grenoble, France  
 📧 nicolas.gratiot@ird.fr
 
-**Florentina Moatar, PhD**  
-*Senior Researcher*  
-Institut national de recherche pour l'agriculture, l'alimentation et l'environnement (INRAe)  
-Lyon, France  
-📧 florentina.moatar@inrae.fr
+**Nguyen Phuoc Dan, PhD**  
+*Professor-Researcher*  
+Centre for Asian Research on WatEr (CARE)
+Faculty of Civil Engineering 
+Ho Chi Minh City University of Technology, Vietnam  
+📧 npdan@hcmut.edu.vn
 
 ---
 
