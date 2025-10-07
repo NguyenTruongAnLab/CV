@@ -239,33 +239,33 @@ Postdoctoral researcher specializing in [water quality modeling](https://doi.org
 
 ## Professional References
 
-**Julien Némery, PhD**  
-*Professor-Researcher*  
-Lecturer at the Institut National Polytechnique de Grenoble 
-Researcher at Institute of Environmental Geosciences (IGE), France  
-Relationship: PhD Supervisor *(2018-2021)* & Current Postdoctoral Research Advisor *(2024-now)* 
-📧 julien.nemery@grenoble-inp.fr
-
-**Nicolas Gratiot, PhD**  
-*Senior Researcher*  
-Director of the Institute of Environmental Geosciences (IGE)    
-Institut de recherche pour le développement (IRD), Grenoble, France 
-Relationship: PhD Co-Supervisor *(2018-2021)* & Current Postdoctoral Research Collaborator *(2024-now)* 
-📧 nicolas.gratiot@ird.fr
-
-**Florentina Moatar, PhD**  
-*Senior Researcher*      
-Institut national de recherche pour l'agriculture, l'alimentation et l'environnement (INRAE)    
-Lyon, France    
-Relationship: Postdoctoral Supervisor *(2022-2024)* 
-📧 florentina.moatar@inrae.fr
-
-**Nguyen Phuoc Dan, PhD**  
+**Julien Némery, PhD**      
 *Professor-Researcher*      
-Centre for Asian Research on WatEr (CARE)       
-Faculty of Civil Engineering, Ho Chi Minh City University of Technology, Vietnam    
-Relationship: Undergraduate Research Mentor *(2015-2017)* & Collaborator with CARE projects *(2021-now)*    
-📧 npdan@hcmut.edu.vn
+Lecturer at the Institut National Polytechnique de Grenoble         
+Researcher at Institute of Environmental Geosciences (IGE), France      
+Relationship: PhD Supervisor *(2018-2021)* & Current Postdoctoral Research Advisor *(2024-now)*     
+Email: julien.nemery@grenoble-inp.fr    
+
+**Nicolas Gratiot, PhD**        
+*Senior Researcher*         
+Director of the Institute of Environmental Geosciences (IGE)        
+Institut de recherche pour le développement (IRD), Grenoble, France         
+Relationship: PhD Co-Supervisor *(2018-2021)* & Current Postdoctoral Research Collaborator *(2024-now)*     
+Email: nicolas.gratiot@ird.fr   
+
+**Florentina Moatar, PhD**      
+*Senior Researcher*         
+Institut national de recherche pour l'agriculture, l'alimentation et l'environnement (INRAE)        
+Lyon, France        
+Relationship: Postdoctoral Supervisor *(2022-2024)*     
+Email: florentina.moatar@inrae.fr   
+
+**Nguyen Phuoc Dan, PhD**   
+*Professor-Researcher*          
+Centre for Asian Research on WatEr (CARE)               
+Faculty of Civil Engineering, Ho Chi Minh City University of Technology, Vietnam        
+Relationship: Undergraduate Research Mentor *(2015-2017)* & Collaborator with CARE projects *(2021-now)*        
+Email: npdan@hcmut.edu.vn
 
 ---
 
