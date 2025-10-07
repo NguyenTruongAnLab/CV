@@ -241,7 +241,7 @@ Postdoctoral researcher specializing in [water quality modeling](https://doi.org
 
 **Julien Némery, PhD**      
 *Professor-Researcher*      
-Lecturer at the Institut National Polytechnique de Grenoble         
+Senior Lecturer at the Institut National Polytechnique de Grenoble         
 Researcher at Institute of Environmental Geosciences (IGE), France      
 Relationship: PhD Supervisor *(2018-2021)* & Current Postdoctoral Research Advisor *(2024-now)*     
 Email: julien.nemery@grenoble-inp.fr    
@@ -255,15 +255,14 @@ Email: nicolas.gratiot@ird.fr
 
 **Florentina Moatar, PhD**      
 *Senior Researcher*         
-Institut national de recherche pour l'agriculture, l'alimentation et l'environnement (INRAE)        
-Lyon, France        
+Institut national de recherche pour l'agriculture, l'alimentation et l'environnement (INRAE) Lyon, France        
 Relationship: Postdoctoral Supervisor *(2022-2024)*     
 Email: florentina.moatar@inrae.fr   
 
 **Nguyen Phuoc Dan, PhD**   
 *Professor-Researcher*          
-Centre for Asian Research on WatEr (CARE)               
-Faculty of Civil Engineering, Ho Chi Minh City University of Technology, Vietnam        
+Researcher at Centre for Asian Research on WatEr (CARE)               
+Senior Lecturer at Faculty of Civil Engineering, Ho Chi Minh City University of Technology, Vietnam        
 Relationship: Undergraduate Research Mentor *(2015-2017)* & Collaborator with CARE projects *(2021-now)*        
 Email: npdan@hcmut.edu.vn
 
